@@ -3,9 +3,16 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
+.main-content {
+    width: 100vw;
+    height: auto;
+    left: auto;
+    right: auto;
+    padding-top: 20vh;
+}
+
 .main-content-h1 {
-    margin: 20vh 0vw 0vh 34vw;
-    width: auto;
+    text-align: center;
 }
   
   
