@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Oxygen', sans-serif;
+    background-image: url("/static/images/background/diego-aguilar-OLc6qPfizeA-unsplash.jpg");
 }
 
 .main-content {
@@ -13,6 +14,8 @@ body {
 
 .main-content-h1 {
     text-align: center;
+    color: #ffffff;
+    text-transform: lowercase;
 }
   
   

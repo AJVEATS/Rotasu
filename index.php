@@ -33,13 +33,10 @@
             <div class="logo-container">
                 <a href="https://imgbb.com/"><img src="https://i.ibb.co/mTQ9zQH/icons8-lotus-32.png" alt="icons8-lotus-32" border="0" /></a>
             </div>
-            <a href="#contact" class="navigation-button">Contact</a>
-            <a href="#about" class="navigation-button">About</a>
-            <a href="#home" class="navigation-button">Home</a>
         </div>
     </div>
     <div class="main-content"> 
-        <h1 class="main-content-h1">Welcome to you personal wellbeing tracker</h1>
+        <h1 class="main-content-h1">how was your day?</h1>
     </div>
 </body>
 </html>
