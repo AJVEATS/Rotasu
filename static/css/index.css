@@ -30,17 +30,18 @@ html {
 }
 
 .title-container {
-    /* background-color: #6A96E1; */
     background-color: rgba(106,150,225, 0.5);
-    /* opacity: 0.5; */
-    width: auto;
+    width: 40vw;
     padding: 4vh 0vw;
-    margin: 0vh 36vw;
+    margin: 0vh 30vw;
     border-radius: 24px;
 }
 
+
 .title-h1 {
     text-align: center;
+    font-size: 300%;
+    margin-top: 2vh;
 }
 
 .account-buttons {
@@ -50,10 +51,10 @@ html {
 }
 
 .account-button {
-    margin-left: 11%;
-    padding: 4% 4%;
-    font-size: 22px;
-    width: 33.3%;
+    padding: 2% 2%;
+    font-size: 25px;
+    width: 25%;
+    height: auto;
 
     color: #ffffff;
     background-color: transparent;
@@ -65,11 +66,19 @@ html {
     border-radius: 5px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#login {
+    margin: 0vh 5% 0vh 22%;
+}
+
 .account-button:hover {
     background-color: #3B69B7;
     border: 3px solid #3B69B7;
     color: white;
     border-radius: 15px;
 }
-  
   

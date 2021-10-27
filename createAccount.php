@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<?php
-    $randomImage = random_int(1, 5); // Gets a random number from a range
-?>
 <html lang="eng">
 <head>
     <!-- Website Title -->
-    <title>Wellbeing Website</title>
+    <title>Create Account</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
