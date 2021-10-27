@@ -44,29 +44,30 @@ html {
 }
 
 .account-buttons {
-    margin: 0vh 0vw;
+    margin: 4vh 0vw 1vh 0vw;
     padding: 0vh 0vw;
     width: auto;
 }
 
 .account-button {
-    /* margin: 0% 0% 0% 15%; */
     margin-left: 11%;
     padding: 4% 4%;
-    font-size: 16px;
+    font-size: 22px;
     width: 33.3%;
 
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #6A96E1;
+    border: 3px solid #ffffff;
     transition-duration: 0.4s;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .account-button:hover {
-    background-color: #6A96E1;
+    background-color: #3B69B7;
+    border: 3px solid #3B69B7;
     color: white;
     border-radius: 15px;
 }
