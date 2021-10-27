@@ -1,4 +1,4 @@
-.top-navigation {
+.top-header {
     overflow: hidden;
     background-color: #6A96E1;
 }
@@ -9,7 +9,7 @@
     padding: 15px 5px 15px 25px;
 }
 
-.top-navigation .navigation-button {
+.top-header .navigation-button {
     float: right;
     display: block;
     text-align: center;
@@ -18,11 +18,4 @@
     text-decoration: none;
     font-size: 17px;
     color: #ffffff;
-}
-
-.top-navigation .navigation-button:hover {
-    background-color: #9FBFF5;
-    color: #ffffff;
-    font-weight: 550;
-    border-radius: 25px;
 }

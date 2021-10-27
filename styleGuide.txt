@@ -1,0 +1,4 @@
+Colors
+    - main color: #6A96E1
+    - secondary color: #    
+Fonts
