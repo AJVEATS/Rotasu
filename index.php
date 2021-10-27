@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-
+    $randomImage = random_int(1, 10);
+    
 ?>
 <html lang="eng">
 <head>
