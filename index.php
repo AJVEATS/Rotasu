@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
-    $randomImage = random_int(1, 5);
-
+    $randomImage = random_int(1, 5); // Gets a random number from a range
 ?>
 <html lang="eng">
 <head>
@@ -25,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
-<!-- <body style="background-image: url('/static/images/background/<?php echo $randomImage ?>.jpg');"> -->
+<!-- <body style="background-image: url('/static/images/background/<?php echo $randomImage ?>.jpg');"> --> 
 <body>
     <div class="header-bar">
         <div class="top-header" id="myTopnav">
@@ -34,8 +33,10 @@
             </div>
         </div>
     </div>
-    <div class="main-content"> 
-        <h1 class="main-content-h1">how was your day?</h1>
+    <div class="title">
+        <div class="title-container">
+            <h1 class="title-h1">how was your day?</h1>
+        </div>
     </div>
 </body>
 </html>

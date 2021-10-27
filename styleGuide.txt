@@ -1,4 +1,4 @@
-Colors
+Colors Scheme - https://www.schemecolor.com/cool-monochromatic.php
     - main color: #6A96E1
     - secondary color: #    
 Fonts
