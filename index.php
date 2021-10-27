@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-    $randomImage = random_int(1, 10);
-    
+    $randomImage = random_int(1, 5);
+
 ?>
 <html lang="eng">
 <head>
@@ -25,6 +25,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
+<!-- <body style="background-image: url('/static/images/background/<?php echo $randomImage ?>.jpg');"> -->
 <body>
     <div class="header-bar">
         <div class="top-header" id="myTopnav">
