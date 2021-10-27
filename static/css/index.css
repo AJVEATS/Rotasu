@@ -14,6 +14,13 @@ html {
     height: 100%;
 }
 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
 .title {
     width: 100vw;
     height: auto;
@@ -34,6 +41,34 @@ html {
 
 .title-h1 {
     text-align: center;
+}
+
+.account-buttons {
+    margin: 0vh 0vw;
+    padding: 0vh 0vw;
+    width: auto;
+}
+
+.account-button {
+    /* margin: 0% 0% 0% 15%; */
+    margin-left: 11%;
+    padding: 4% 4%;
+    font-size: 16px;
+    width: 33.3%;
+
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #6A96E1;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.account-button:hover {
+    background-color: #6A96E1;
+    color: white;
+    border-radius: 15px;
 }
   
   
