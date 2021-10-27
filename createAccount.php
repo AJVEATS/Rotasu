@@ -11,27 +11,20 @@
     <meta name="author" content="Alexander Veats">
 
     <!-- Stylesheet Styling -->
-    <link rel="stylesheet" href="static/css/index.css"> <!-- Imports the css style sheet index.css -->
+    <link rel="stylesheet" href="static/css/createAccount.css"> <!-- Imports the css style sheet index.css -->
+    <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
     <!-- <link rel="stylesheet" href="static/css/navigationBar.css"> Imports the css style sheet createAccount.css -->
-
-    <!-- Fonts -->
-    
 
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
-<!-- <body style="background-image: url('/static/images/background/<?php echo $randomImage ?>.jpg');"> --> 
 <body>
     <div class="title">
         <div class="title-container">
             <img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" />
             <div class="title-content">
-                <h1 class="title-h1">how was your day?</h1>
-                <div class="account-buttons">
-                    <a href="#login"><button type="button" id="login" class="account-button">log in</button></a>
-                    <a href="createAccount.php"><button type="button" id="new-here" class="account-button">new here?</button></a>
-                </div>
+                <h1 class="title-h1">Create Account</h1>
             </div>
         </div>
     </div>
