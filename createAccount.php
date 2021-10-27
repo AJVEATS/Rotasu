@@ -22,7 +22,7 @@
 <body>
     <div class="title">
         <div class="title-container">
-            <img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" />
+            <a href="index.php"><img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" /></a>
             <div class="title-content">
                 <h1 class="title-h1">Create Account</h1>
             </div>

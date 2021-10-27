@@ -18,7 +18,7 @@
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
-</head>> 
+</head>
 <body>
     <div class="title">
         <div class="title-container">
@@ -26,7 +26,7 @@
             <div class="title-content">
                 <h1 class="title-h1">how was your day?</h1>
                 <div class="account-buttons">
-                    <a href="#login"><button type="button" id="login" class="account-button">log in</button></a>
+                    <a href="login.php"><button type="button" id="login" class="account-button">log in</button></a>
                     <a href="createAccount.php"><button type="button" id="new-here" class="account-button">new here?</button></a>
                 </div>
             </div>
