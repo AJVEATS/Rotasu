@@ -35,17 +35,5 @@
             </div>
         </div>
     </div>
-
-    <?php 
-        $sql = "SELECT * FROM user_tbl;";
-        $result = mysqli_query($connection, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if ($resultCheck > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echp $row['user_name'];
-            }
-        }
-    ?>
 </body>
 </html>

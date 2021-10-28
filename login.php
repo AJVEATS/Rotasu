@@ -11,7 +11,7 @@
     <meta name="author" content="Alexander Veats">
 
     <!-- Stylesheet Styling -->
-    <link rel="stylesheet" href="static/css/createAccount.css"> <!-- Imports the css style sheet index.css -->
+    <link rel="stylesheet" href="static/css/login.css"> <!-- Imports the css style sheet index.css -->
     <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
     <!-- <link rel="stylesheet" href="static/css/navigationBar.css"> Imports the css style sheet createAccount.css -->
 
@@ -25,6 +25,13 @@
             <a href="index.php"><img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" /></a>
             <div class="title-content">
                 <h1 class="title-h1">Log in</h1>
+            </div>
+            <div class="loginContainer">
+                <form action="" method="POST"> <!-- The login in form for users with POST http method -->
+                    <input type="email" placeholder="email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <button type="submit" name="userLogin" value="submit">Login</button>
+                </form>
             </div>
         </div>
     </div>
