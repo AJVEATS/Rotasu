@@ -1,26 +1,29 @@
+.login-container {
+  width: 100%;
+  margin: 2vh 0vw 0vh 6.5vw;
+}
+
 input[type=email], input[type=password] {
-  width: 80%;
+  width: 70%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 0vh 0vw 2vh 0vw;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
 }
 
 input[type=submit] {
-  width: 80%;
+  width: 70%;
   background-color: #3B69B7;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 0vh 0vw 0vh 0vw;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  
 }
-  
-  input[type=submit]:hover {
-    background-color: #3B69B7;
-  }
+
+input[type=submit]:hover {
+  background-color: #3B69B7;
+}

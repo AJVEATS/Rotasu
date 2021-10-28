@@ -13,8 +13,7 @@
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/login.css"> <!-- Imports the css style sheet index.css -->
     <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
-    <!-- <link rel="stylesheet" href="static/css/navigationBar.css"> Imports the css style sheet createAccount.css -->
-
+    
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
@@ -26,7 +25,7 @@
             <div class="title-content">
                 <h1 class="title-h1">Log in</h1>
             </div>
-            <div class="loginContainer">
+            <div class="login-container">
                 <form action="" method="POST"> <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email">
                     <input type="password" placeholder="Password" name="password">
