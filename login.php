@@ -30,7 +30,7 @@
                 <form action="" method="POST"> <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email">
                     <input type="password" placeholder="Password" name="password">
-                    <button type="submit" name="userLogin" value="submit">Login</button>
+                    <input type="submit" value="login">
                 </form>
             </div>
         </div>
