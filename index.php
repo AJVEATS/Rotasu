@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <?php
-session_start(); // Includes the session started in the session.php script
-
-// if (!isset($_COOKIE[$_SESSION['user_name']])) { // Checks if the user has a log in cookie
-//     //echo '<script>console.log("user not logged in");</script>'; // Used for development and testing
-// } else {
-//     echo '<script>console.log("user logged in");</script>';
-//     header('Location: userHome.php'); // If a user is logged in they are redirected to the user home page
-// }
+    include_once 'includes/databaseConnection.php'
 ?>
 <html lang="eng">
 <head>
@@ -42,5 +35,17 @@ session_start(); // Includes the session started in the session.php script
             </div>
         </div>
     </div>
+
+    <?php 
+        $sql = "SELECT * FROM user_tbl;";
+        $result = mysqli_query($connection, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if ($resultCheck > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                echp $row['user_name'];
+            }
+        }
+    ?>
 </body>
 </html>
