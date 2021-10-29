@@ -3,7 +3,7 @@
   margin: 2vh 0vw 0vh 8.5vw;
 }
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password], input[type=text] {
   width: 60%;
   padding: 12px 20px;
   margin: 0vh 0vw 2vh 0vw;
@@ -34,4 +34,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #6A96E1;
+}
+
+.show-password {
+  width: fit-content;
+  margin-bottom: 2vh;
+}
+
+.create-account-container label {
+  font-size: 1.05vw;
 }

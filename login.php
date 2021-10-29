@@ -13,12 +13,20 @@
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/login.css"> <!-- Imports the css style sheet index.css -->
     <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
+
+    <!-- Javascript functions -->
+    <script src="/includes/js/login-create-account.js"></script>
     
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
 <body>
+    <?php
+        if (isset($POST['login'])) {
+            echo "it knows you clicked the button";
+        }
+    ?>
     <div class="title">
         <div class="title-container">
             <a href="index.php"><img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" /></a>
@@ -28,8 +36,12 @@
             <div class="login-container">
                 <form action="" method="POST"> <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email" required>
-                    <input type="password" placeholder="Password" name="password" required>
-                    <input type="submit" value="login">
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                    <div class="show-password">
+                        <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
+                        <label for="show-password-checkbox">Show password</label> 
+                    </div>
+                    <input type="submit" value="login" name="login">
                 </form>
                 <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>

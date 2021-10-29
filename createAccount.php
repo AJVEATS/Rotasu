@@ -15,21 +15,19 @@
     <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
     <!-- <link rel="stylesheet" href="static/css/navigationBar.css"> Imports the css style sheet createAccount.css -->
 
+    <!-- Javascript functions -->
+    <script src="/includes/js/login-create-account.js"></script>
+
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
 <body>
-    <script>
-        function showPassword() {
-            var x = document.getElementById("password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
+    <?php
+        if (isset($POST['create-account'])) {
+            echo "it knows you clicked the button";
         }
-    </script>
+    ?>
     <div class="title">
         <div class="title-container">
             <a href="index.php"><img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" /></a>
@@ -50,7 +48,7 @@
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label> 
                     </div>
-                    <input type="submit" value="create account">
+                    <input type="submit" value="create account" name="create-account">
                 </form>
                 <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>
