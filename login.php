@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<?php
-
-include_once 'includes/php/databaseConnection.php';
-
-?>
 <html lang="eng">
+<?php 
+include_once 'includes/php/loginScript.php';
+?>
 <head>
     <!-- Website Title -->
     <title>Create Account</title>
@@ -39,14 +37,15 @@ include_once 'includes/php/databaseConnection.php';
                 <h1 class="title-h1">Log in</h1>
             </div>
             <div class="login-container">
-                <form action="" method="POST"> <!-- The login in form for users with POST http method -->
+                <form action="login.php" method="POST"> <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email" required>
                     <input type="password" placeholder="Password" id="password" name="password" required>
                     <div class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label> 
                     </div>
-                    <input type="submit" value="login" name="login">
+                    <!-- <input type="submit" value="login" name="login"> -->
+                    <button type="submit" name="login" value="submit">login</button>
                 </form>
                 <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>

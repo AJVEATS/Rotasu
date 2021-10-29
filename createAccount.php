@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 
-include_once 'includes/php/databaseConnection.php';
+
+
 
 ?>
 <html lang="eng">
@@ -28,11 +29,6 @@ include_once 'includes/php/databaseConnection.php';
 
 </head>
 <body>
-    <?php
-        if (isset($POST['create-account'])) {
-            echo "it knows you clicked the button";
-        }
-    ?>
     <div class="title">
         <div class="title-container">
             <a href="index.php"><img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" /></a>
