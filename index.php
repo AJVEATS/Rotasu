@@ -25,7 +25,7 @@
 <body>
     <div class="title">
         <div class="title-container">
-            <img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" />
+            <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
             <div class="title-content">
                 <h1 class="title-h1">how was your day?</h1>
                 <div class="account-buttons">

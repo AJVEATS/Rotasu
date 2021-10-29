@@ -32,7 +32,7 @@
     </script>
     <div class="title">
         <div class="title-container">
-            <a href="index.php"><img class="logo" src="/static/images/logo/icons8-lotus-96.png" alt="lotus" /></a>
+            <a href="index.php"><img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" /></a>
             <div class="title-content">
                 <h1 class="title-h1">Create Account</h1>
             </div>
@@ -50,8 +50,9 @@
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label> 
                     </div>
-                    <input type="submit" value="login">
+                    <input type="submit" value="create account">
                 </form>
+                <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>
         </div>
     </div>
