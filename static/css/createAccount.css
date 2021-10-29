@@ -2,10 +2,6 @@
     width: 100%;
     margin: 2vh 0vw 0vh 8.5vw;
 }
-  
-form {
-    width: auto;
-}
 
 input[type=email], input[type=password], input[type=text] {
     width: 60%;

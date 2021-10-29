@@ -35,4 +35,9 @@ a {
     color: white;
     border-radius: 15px;
 }
+
+.about {
+    text-align: center;
+    font-size: 1.2vw;
+}
   
