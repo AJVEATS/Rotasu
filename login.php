@@ -27,8 +27,8 @@
             </div>
             <div class="login-container">
                 <form action="" method="POST"> <!-- The login in form for users with POST http method -->
-                    <input type="email" placeholder="email" name="email">
-                    <input type="password" placeholder="Password" name="password">
+                    <input type="email" placeholder="email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
                     <input type="submit" value="login">
                 </form>
             </div>
