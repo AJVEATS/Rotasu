@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+
+include_once 'includes/php/databaseConnection.php';
+
+?>
 <html lang="eng">
 <head>
     <!-- Website Title -->

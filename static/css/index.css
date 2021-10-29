@@ -40,4 +40,8 @@ a {
     text-align: center;
     font-size: 1.2vw;
 }
+
+i:hover {
+    opacity: 0.8;
+}
   

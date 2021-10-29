@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    include_once 'includes/databaseConnection.php'
+    include_once 'includes/php/databaseConnection.php';
 ?>
 <html lang="eng">
 <head>
@@ -29,7 +29,7 @@
             <div class="title-content">
                 <h1 class="title-h1">how was your day?</h1>
                 <a href="about.php"class="about">
-                    <p><i>lean more about /*name*/</i></p>
+                    <p class="about-text"><i>lean more about /*name*/</i></p>
                 </a>
                 <div class="account-buttons">
                     <a href="login.php"><button type="button" id="login" class="account-button">log in</button></a>

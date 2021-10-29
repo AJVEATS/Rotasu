@@ -41,6 +41,6 @@ input[type=submit]:hover {
   margin-bottom: 2vh;
 }
 
-.create-account-container label {
+label {
   font-size: 1.05vw;
 }
