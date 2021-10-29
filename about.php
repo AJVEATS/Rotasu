@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
     include_once 'includes/php/databaseConnection.php';
-    $sql = "INSERT INTO user_tbl (user_name, user_email, user_password, user_dob), VALUES ('Kamil', 'kamil@hotmail.com', '17b57ed6271f35bd4eb1f47271c2574af4f9ebc84e8ffc873f78a03700ab1f429edddc7f702ca0aaafa857948e9732c6197192848f568b78fd54b06bc9314bba', '2001-03-28');";
-    $result = mysqli_query($connection, $sql);
+    $sql = "INSERT INTO user_tbl (user_name, user_email, user_password, user_dob) VALUES ('Kermit', 'kamil@hotmail.com', '17b57ed6271f35bd4eb1f47271c2574af4f9ebc84e8ffc873f78a03700ab1f429edddc7f702ca0aaafa857948e9732c6197192848f568b78fd54b06bc9314bba', '2001-03-28');";
+    mysqli_query($connection, $sql);
 
 
 
