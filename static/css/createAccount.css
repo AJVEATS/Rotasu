@@ -25,7 +25,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
 }
 
 .create-account-container label {
-    font-size: 20px;
+    font-size: 1.05vw;
 }
 
 input[type=date] {
