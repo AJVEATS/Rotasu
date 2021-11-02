@@ -42,6 +42,6 @@
 
 </head>
 <body>
-   <a href="logout.php">logout</a>
+   <a href="logout.php" class="">logout</a>
 </body>
 </html>
