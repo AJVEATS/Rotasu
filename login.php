@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
 <?php 
+include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/loginScript.php';
 ?>
 <head>
@@ -25,11 +26,6 @@ include_once 'includes/php/loginScript.php';
 
 </head>
 <body>
-    <?php
-        if (isset($POST['login'])) {
-            echo "it knows you clicked the button";
-        }
-    ?>
     <div class="title">
         <div class="title-container">
             <a href="index.php"><img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" /></a>
@@ -37,7 +33,7 @@ include_once 'includes/php/loginScript.php';
                 <h1 class="title-h1">Log in</h1>
             </div>
             <div class="login-container">
-                <form action="login.php" method="POST"> <!-- The login in form for users with POST http method -->
+                <form action="" method="POST"> <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email" required>
                     <input type="password" placeholder="Password" id="password" name="password" required>
                     <div class="show-password">
@@ -45,7 +41,7 @@ include_once 'includes/php/loginScript.php';
                         <label for="show-password-checkbox">Show password</label> 
                     </div>
                     <!-- <input type="submit" value="login" name="login"> -->
-                    <button type="submit" name="login" value="submit">login</button>
+                    <button type="submit" name="login-button" class="login-button" value="submit">login</button>
                 </form>
                 <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>

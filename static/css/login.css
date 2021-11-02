@@ -44,3 +44,22 @@ input[type=submit]:hover {
 label {
   font-size: 1.05vw;
 }
+
+.login-button {
+  background-color: #3B69B7;
+  border: none;
+  color: #ffffff;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 0vh 0vw 2vh 0vw;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+}
+
+.login-button:hover {
+  background-color: #6A96E1;
+}
