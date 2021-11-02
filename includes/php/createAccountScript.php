@@ -1,5 +1,6 @@
 <?php 
     include_once './includes/php/databaseConnection.php';
+    session_start();
 
     if (isset($_POST['create-account-button'])) { // Checks if a user has submitted a form with a POST request method from the form
         if ($_POST['password'] === $_POST['passwordConfirm']) { // Checks if the password and confirm password are identical
@@ -22,7 +23,7 @@
             if (mysqli_query($connection, $create_account_string)) { // Checks if the users detail have been added to the database
                 echo '<script>console.log("user added to the table");</script>'; // Outputs a message to the user's browser console
                 echo '<script>alert("user added to the table");</script>'; // Alerts the user that they have been added to the database
-                header('Location: userHome.php'); // Redirects the user to the user home page (userHome.php)
+                header('Location: home.php'); // Redirects the user to the user home page (userHome.php)
             }
         } else { // If the user's details aren't added to the database
             echo '<script type="text/javascript">alert("Passwords do not match please enter your password in again")</script>'; // Outputs an error message

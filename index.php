@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <?php
     include_once 'includes/php/databaseConnection.php';
+
+    session_start(); // Includes the session started in the session.php script
+
+    // if (!isset($_COOKIE[$_SESSION['user_name']])) { // Checks if the user has a log in cookie
+    //     //echo '<script>console.log("user not logged in");</script>'; // Used for development and testing
+    // } else {
+    //     echo '<script>console.log("user logged in");</script>';
+    //     header('Location: userHome.php'); // If a user is logged in they are redirected to the user home page
+    // }
 ?>
 <html lang="eng">
 <head>

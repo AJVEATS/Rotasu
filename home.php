@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php
+
+    session_start();
     include_once 'includes/php/databaseConnection.php';
     
     $sql = "SELECT * FROM user_tbl;";
@@ -12,7 +14,7 @@
         }
     }
 
-
+    echo $_SESSION['user_email'];
 
 ?>
 <html lang="eng" style="background-image: url('/static/images/background/kirby-headphones.gif') !important;">
