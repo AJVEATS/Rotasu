@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <?php
-
-
-
-
+include_once 'includes/php/createAccountScript.php';
 ?>
 <html lang="eng">
 <head>
     <!-- Website Title -->
-    <title>Create Account</title>
+    <title>create account</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -19,7 +16,6 @@
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/createAccount.css"> <!-- Imports the css style sheet index.css -->
     <link rel="stylesheet" href="static/css/indexContainer.css"> <!-- Imports the css style sheet indexContainer.css -->
-    <!-- <link rel="stylesheet" href="static/css/navigationBar.css"> Imports the css style sheet createAccount.css -->
 
     <!-- Javascript functions -->
     <script src="/includes/js/login-create-account.js"></script>
@@ -37,7 +33,7 @@
             </div>
             <div class="create-account-container">
                 <form action="" method="POST"> <!-- The login in form for users with POST http method -->
-                    <input type="text" placeholder="Your name" required>
+                    <input type="text" placeholder="Your name" name="name" required>
                     <input type="email" placeholder="email" name="email" required><br>
                     <div class="date-input-container">
                         <label for="dob">Date of birth:⠀⠀</label>

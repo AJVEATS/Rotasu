@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
 <?php 
-include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/loginScript.php';
 ?>
 <head>
     <!-- Website Title -->
-    <title>Create Account</title>
+    <title>login</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
