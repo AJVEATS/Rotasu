@@ -49,7 +49,7 @@
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label> 
                     </div>
-                    <input type="submit" value="create account" name="create-account">
+                    <button type="submit" name="create-account-button" class="create-account-button" value="submit">create account</button>
                 </form>
                 <a href="index.php"><img class="back-arrow" src="/static/images/icons/arrow-left.svg" /></a>
             </div>
