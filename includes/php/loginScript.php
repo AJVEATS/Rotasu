@@ -21,12 +21,12 @@
 
         if($count == 1) { // Checks if one row was returned
 
-            $_SESSION['user_email'] = $email; // Creates a session variable consisting of the logged in user's username
             $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['user_id'] = $row['user_id']; // Creates a session variable consisting of the logged in user's user id
             $expiry = time() + 3600 * 24; // Create a variable for the expiry of the cookie which will be created
 
-            setcookie($_SESSION['user_id'], $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id
+            setcookie("user_name", $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id
+            setcookie("user_id", $_SESSION['user_id'], $expiry);
 
             header("location: home.php"); // Redirects the logged in user to the user home page (home.php)
         } else { // If it returns more than one row from the database or if it returns nothing from the database

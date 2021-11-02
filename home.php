@@ -14,7 +14,9 @@
         }
     }
 
-    echo $_SESSION['user_email'];
+    if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
+        header('Location: index.php'); // Redirects the user to the index page (index.php)
+    }
 
 ?>
 <html lang="eng" style="background-image: url('/static/images/background/kirby-headphones.gif') !important;">
