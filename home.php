@@ -3,8 +3,11 @@
 
     session_start();
     include_once 'includes/php/databaseConnection.php';
+
+    $user_name = $_COOKIE["user_name"];
+    $user_id = $_COOKIE["user_id"]
     
-    $sql = "SELECT * FROM user_tbl;";
+    $sql = "SELECT * FROM user_tbl WHERE user_name = '$user_id';";
     $result = mysqli_query($connection, $sql);
     $resultCheck = mysqli_num_rows($result);
 

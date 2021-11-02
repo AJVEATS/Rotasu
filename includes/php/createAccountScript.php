@@ -29,5 +29,4 @@
             echo '<script type="text/javascript">alert("Passwords do not match please enter your password in again")</script>'; // Outputs an error message
         }
     }
-
-    // name, email, dob, password, passwordConfirm
+?>

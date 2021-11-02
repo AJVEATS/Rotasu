@@ -1,5 +1,6 @@
 <?php
     include_once './includes/php/databaseConnection.php';
+    session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") { // Checks if a user has submitted a form with a POST request method
 
@@ -34,3 +35,4 @@
             echo '<script>alert("user details are incorrect"); </script>'; // Outputs an error message to the user's browser console
         }
     }
+?>

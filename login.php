@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="eng">
 <?php 
-include_once 'includes/php/loginScript.php';
-session_start();
+    include_once 'includes/php/loginScript.php';
+    // session_start();
 ?>
 <head>
     <!-- Website Title -->

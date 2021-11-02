@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include_once 'includes/php/createAccountScript.php';
+    include_once 'includes/php/createAccountScript.php';
 ?>
 <html lang="eng">
 <head>
