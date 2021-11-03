@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng" style="background-image: url('/static/images/background/kirby-headphones.gif') !important;">
+
 <head>
     <!-- Website Title -->
     <title>Wellbeing Website</title>
@@ -18,7 +19,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
+
 <body>
-   
+
 </body>
+
 </html>

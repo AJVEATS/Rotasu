@@ -76,3 +76,7 @@ input[type=submit]:hover {
 .create-account-button:hover {
   background-color: #6A96E1;
 }
+
+.dob-label {
+  margin-right: 1.25vw;
+}

@@ -4,6 +4,7 @@
     include_once 'includes/php/loginScript.php';
     // session_start();
 ?>
+
 <head>
     <!-- Website Title -->
     <title>login</title>
@@ -20,11 +21,12 @@
 
     <!-- Javascript functions -->
     <script src="/includes/js/login-create-account.js"></script>
-    
+
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
+
 <body>
     <div class="title">
         <div class="title-container">
@@ -33,12 +35,13 @@
                 <h1 class="title-h1">Log in</h1>
             </div>
             <div class="login-container">
-                <form action="" method="POST"> <!-- The login in form for users with POST http method -->
+                <form action="" method="POST">
+                    <!-- The login in form for users with POST http method -->
                     <input type="email" placeholder="email" name="email" required>
                     <input type="password" placeholder="Password" id="password" name="password" required>
                     <div class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
-                        <label for="show-password-checkbox">Show password</label> 
+                        <label for="show-password-checkbox">Show password</label>
                     </div>
                     <!-- <input type="submit" value="login" name="login"> -->
                     <button type="submit" name="login-button" class="login-button" value="submit">login</button>
@@ -48,4 +51,5 @@
         </div>
     </div>
 </body>
+
 </html>

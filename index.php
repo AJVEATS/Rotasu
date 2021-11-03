@@ -12,6 +12,7 @@
     // }
 ?>
 <html lang="eng">
+
 <head>
     <!-- Website Title -->
     <title>Wellbeing Website</title>
@@ -31,21 +32,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
+
 <body>
     <div class="title">
         <div class="title-container">
             <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
             <div class="title-content">
                 <h1 class="title-h1">how was your day?</h1>
-                <a href="about.php"class="about">
+                <a href="about.php" class="about">
                     <p class="about-text"><i>lean more about /*name*/</i></p>
                 </a>
                 <div class="account-buttons">
                     <a href="login.php"><button type="button" id="login" class="account-button">log in</button></a>
-                    <a href="createAccount.php"><button type="button" id="new-here" class="account-button">new here?</button></a>
+                    <a href="createAccount.php"><button type="button" id="new-here" class="account-button">new
+                            here?</button></a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
