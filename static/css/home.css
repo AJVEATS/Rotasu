@@ -1,8 +1,22 @@
 html {
-    color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     margin: 0;
+}
+
+.main-content {
+    width: 100vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.welcome-message {
+    color: #333333;
+    font-size: 5vh;
+
+    display: block;
+    margin: 10vh auto 0vh auto;
+    width: auto;
 }

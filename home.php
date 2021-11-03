@@ -21,12 +21,22 @@
         header('Location: index.php'); // Redirects the user to the index page (index.php)
     }
 
+    // Gets the time of day so it says good morning or good afternoon to the user
+
+    $timeOfDay = date('a');
+    $welcomeMessage = '';
+    if($timeOfDay == 'am'){
+        $welcomeMessage =  'Good morning '.$_SESSION['user_name'];
+    }else{
+        $welcomeMessage = 'Good afternoon '.$_SESSION['user_name'];
+    }
+
 ?>
 <html lang="eng">
 
 <head>
     <!-- Website Title -->
-    <title>Wellbeing Website</title>
+    <title><?php echo $_SESSION['user_name'] ?>'s homepage</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -71,6 +81,9 @@
         <a href="javascript:void(0);" class="icon" onclick="responsiveness()">
             <i class="fa fa-bars"></i>
         </a>
+    </div>
+    <div class="main-content">
+        <p class="welcome-message"><?php echo $welcomeMessage ?></p>
     </div>
 </body>
 
