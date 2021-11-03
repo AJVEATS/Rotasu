@@ -63,8 +63,8 @@
             </div>
         </div> -->
         <a href="logout.php">logout</a>
-        <a href="#contact">account</a>
-        <a href="#home">home</a>
+        <a href="account.php">account</a>
+        <a href="home.php">home</a>
         <a href="javascript:void(0);" class="icon" onclick="responsiveness()">
             <i class="fa fa-bars"></i>
         </a>
