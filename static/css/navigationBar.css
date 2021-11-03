@@ -4,7 +4,8 @@
 }
 
 .logo {
-    float: right;
+    float: left;
+    margin-left: 0.5vw;
 }
 
 .topnav a {
@@ -33,7 +34,6 @@
 
 @media screen and (max-width: 600px) {
     .topnav a {display: none;}
-    button {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
@@ -50,7 +50,10 @@
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
+    }
+    .topnav.responsive img {
+        display: block;
     }
 }
 
