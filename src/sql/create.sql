@@ -1,4 +1,4 @@
---CREATE SCRIPT
+--CREATE SCRIPTS
 
 CREATE TABLE user_tbl (
 
