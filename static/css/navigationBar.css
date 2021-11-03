@@ -3,24 +3,28 @@
     background-color: #6A96E1;
 }
 
+.logo {
+    float: right;
+}
+
 .topnav a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 19px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #ffffff;
+    color: #6A96E1;
 }
 
 .topnav a.active {
     background-color: #04AA6D;
-    color: white;
+    color: #ffffff;
 }
 
 .topnav .icon {

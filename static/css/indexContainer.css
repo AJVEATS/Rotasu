@@ -40,10 +40,32 @@ html {
 
 .title-h1 {
     text-align: center;
-    font-size: 300%;
+    font-size: 45px;
     margin-top: 2vh;
 }
 
 .back-arrow {
     fill: #ffffff;
+}
+
+@media only screen and (max-width: 1470px) {
+    .title-h1 {
+        font-size: 35px;
+    } 
+}
+
+@media only screen and (max-width: 1190px) {
+    .title-h1 {
+        font-size: 30px;
+    }  
+}
+
+@media only screen and (max-width: 910px) {
+    .title-h1 {
+        font-size: 25px;
+    }   
+}
+
+@media only screen and (max-width: 700px) {
+    
 }
