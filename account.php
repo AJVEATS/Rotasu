@@ -48,6 +48,16 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <?php 
+        // echo $_SESSION['user_name'];
+        // echo $_SESSION['user_dob'];
+        // echo $_SESSION['user_email'];
+    ?>
+    <div class="account-content-container">
+        <div class="welcome-message-container">
+            <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -5,3 +5,20 @@ html {
 body {
     margin: 0;
 }
+
+.account-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.welcome-message-container {
+    border-bottom: 2px solid #6A96E1;
+    /* background-color: lightgrey; */
+    padding: 5vh 0vw 0vh 0vw;
+}
+
+.welcome-message {
+    font-size: 42px;
+    margin: 0vh 0vw 0vh 0vw;
+}

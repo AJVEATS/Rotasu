@@ -6,16 +6,6 @@
 
     $user_name = $_COOKIE["user_name"];
     $user_id = $_COOKIE["user_id"];
-    
-    $sql = "SELECT user_name FROM user_tbl WHERE user_id = '$user_id';";
-    $result = mysqli_query($connection, $sql);
-    $resultCheck = mysqli_num_rows($result);
-
-    if ($resultCheck > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            // echo $row['user_name'] . "<br>";
-        }
-    }
 
     if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
         header('Location: index.php'); // Redirects the user to the index page (index.php)
@@ -60,18 +50,7 @@
 </head>
 
 <body>
-    <!-- <a href="logout.php" class="">logout</a> -->
     <div class="topnav" id="myTopnav">
-        <!-- <div class="dropdown">
-            <button class="dropbtn">Account
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="">All topics</a>
-                <a href="">Software engineering</a>
-                <a href="logout.php">logout</a>
-            </div>
-        </div> -->
         <div class="logo">
             <img class="logo" src="/static/images/logo/lotus-64.png" alt="lotus" />
         </div>
