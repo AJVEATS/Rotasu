@@ -37,7 +37,10 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
+<div class="topnav" id="myTopnav">
+        <div class="logo">
+            <img class="logo" src="/static/images/logo/lotus-64.png" alt="lotus" />
+        </div>
         <a href="logout.php">logout</a>
         <a href="account.php">account</a>
         <a href="home.php">home</a>
