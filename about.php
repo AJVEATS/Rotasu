@@ -1,3 +1,6 @@
+<?php
+    
+?>
 <!DOCTYPE html>
 <html lang="eng" style="background-image: url('/static/images/background/kirby-headphones.gif') !important;">
 
