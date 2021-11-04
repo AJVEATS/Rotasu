@@ -4,6 +4,6 @@
         setcookie("user_id", $_SESSION['user_id'], time() - 3600);
         setcookie("user_name", $_SESSION['user_name'], time() - 3600);
 
-        header("location: index.php"); // Redirects the user to the index page (index.php)
+        header("location: ../../index.php"); // Redirects the user to the index page (index.php)
     }
 ?>

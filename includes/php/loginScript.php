@@ -7,7 +7,7 @@
         $email = mysqli_real_escape_string($connection,$_POST['email']); // Gets the user's username that they entered in the login form from index.php
         $password = hash('sha512' /* Hashes the users password to sha512 hash */, mysqli_real_escape_string($connection,$_POST['password'])); // Gets the user's password that they entered in the login form from index.php
 
-        $validate_user_query_string = "SELECT user_id, user_name, user_email FROM user_tbl WHERE user_email = '$email' and user_password = '$password'"; // Creates a query with the data that the users entered in the login form, to check if they are a valid user
+        $validate_user_query_string = "SELECT user_id, user_name, user_email, user_dob FROM user_tbl WHERE user_email = '$email' and user_password = '$password'"; // Creates a query with the data that the users entered in the login form, to check if they are a valid user
         $result = mysqli_query($connection, $validate_user_query_string); // With the query created above it ($validate_user_query_string) it executes the query with the database
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC); // Creating a variable consisting of the returned data from the database
         // $active = $row['active'];
@@ -24,6 +24,8 @@
 
             $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['user_id'] = $row['user_id']; // Creates a session variable consisting of the logged in user's user id
+            $_SESSION['user_dob'] = $row['user_dob'];
+            $_SESSION['user_email'] = $row['user_email'];
             $expiry = time() + 3600 * 24; // Create a variable for the expiry of the cookie which will be created
 
             setcookie("user_name", $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id

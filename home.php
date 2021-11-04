@@ -4,9 +4,6 @@
     session_start();
     include_once 'includes/php/databaseConnection.php';
 
-    $user_name = $_COOKIE["user_name"];
-    $user_id = $_COOKIE["user_id"];
-
     if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
         header('Location: index.php'); // Redirects the user to the index page (index.php)
     }
@@ -15,10 +12,11 @@
 
     $timeOfDay = date('a');
     $welcomeMessage = '';
-    if($timeOfDay == 'am'){
-        $welcomeMessage =  'Good morning '.$_SESSION['user_name'];
-    }else{
-        $welcomeMessage = 'Good afternoon '.$_SESSION['user_name'];
+
+    if ($timeOfDay == 'am') {
+        $welcomeMessage =  'Good morning '.$_COOKIE["user_name"];
+    } else {
+        $welcomeMessage = 'Good afternoon '.$_COOKIE["user_name"];
     }
 
 ?>
@@ -26,7 +24,7 @@
 
 <head>
     <!-- Website Title -->
-    <title><?php echo $_SESSION['user_name'] ?>'s homepage</title>
+    <title><?php echo $_COOKIE["user_name"] ?>'s homepage</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">

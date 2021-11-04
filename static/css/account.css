@@ -22,3 +22,64 @@ body {
     font-size: 42px;
     margin: 0vh 0vw 0vh 0vw;
 }
+
+.detail-container {
+    margin: 4vh 0vw 0vh 0vw;
+}
+
+.current-user-details-container {
+    margin: 0vh 0vw 0vh 0vw;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.current-user-details-title {
+    font-size: 32px;
+    margin: 0vh 0vw 0vh 0vw;
+    border-bottom: 2px solid #6A96E1;
+    width: fit-content;
+}
+
+.update-user-details-container {
+    margin: 0vh 0vw 0vh 0vw;
+    width: 40%;
+    display: inline-block;
+}
+
+.update-user-details-title {
+    font-size: 32px;
+    margin: 0vh 0vw 0vh 0vw;
+    border-bottom: 2px solid #6A96E1;
+    width: fit-content;
+}
+
+.update-user-detail-form {
+    margin-top: 2vh;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+}
+
+.update-user-details-button {
+    background-color: #3B69B7;
+    border: none;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2vh 0vw 2vh 0vw;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+}
+
+.update-user-details-button:hover {
+    background-color: #6A96E1;
+}
+

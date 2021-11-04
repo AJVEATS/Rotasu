@@ -31,7 +31,7 @@
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
-    <!-- Icon -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -56,6 +56,25 @@
     <div class="account-content-container">
         <div class="welcome-message-container">
             <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?>
+        </div>
+        <div class="detail-container">
+            <div class="current-user-details-container">
+                <p class="current-user-details-title">Your Current Details</p>
+                <p class="current-user-details">First name: <?php echo $_SESSION['user_name'] ?></p>
+                <p class="current-user-details">Email: <?php echo $_SESSION['user_email'] ?></p>
+                <p class="current-user-details">Date of birth: <?php echo $_SESSION['user_dob'] ?></p>
+            </div>
+            <div class="update-user-details-container">
+                <p class="update-user-details-title">Update your details</p>
+                <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>"><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>"><br>
+                    <button type="submit" name="update-user-details-button" class="update-user-details-button" value="submit">update details</button>
+                    <!-- <input type="submit" value="update details"> -->
+                </form> 
+            </div>
         </div>
     </div>
 </body>
