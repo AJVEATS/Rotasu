@@ -19,9 +19,8 @@
         // echo $update_user_details_string . " ";
 
         if (mysqli_query($connection, $update_user_details_string)) { // Checks if the users detail have been added to the database
-            echo '<script>console.log("user added to the table");</script>'; // Outputs a message to the user's browser console
-            echo '<script>alert("user added to the table");</script>'; // Alerts the user that they have been added to the database
+            echo '<script>console.log("user details updated in the table");</script>'; // Outputs a message to the user's browser console
+            echo '<script>alert("user details updated in the table");</script>'; // Alerts the user that they have been added to the database
             header('Location: ../../account.php'); // Redirects the user to the user home page (userHome.php)
         }
     }
-?>

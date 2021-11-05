@@ -37,7 +37,7 @@
 </head>
 
 <body>
-<div class="topnav" id="myTopnav">
+    <div class="topnav" id="myTopnav">
         <div class="logo">
             <img class="logo" src="/static/images/logo/lotus-64.png" alt="lotus" />
         </div>
@@ -68,13 +68,23 @@
                 <p class="update-user-details-title">Update your details</p>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
                     <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>"><br>
+                    <input type="text" id="first-name" name="first-name"
+                        value="<?php echo $_SESSION['user_name'] ?>"><br>
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>"><br>
-                    <button type="submit" name="update-user-details-button" class="update-user-details-button" value="submit">update details</button>
+                    <button type="submit" name="update-user-details-button" class="update-user-details-button"
+                        value="submit">update details</button>
                     <!-- <input type="submit" value="update details"> -->
-                </form> 
+                </form>
             </div>
+        </div>
+        <div class="delete-user-container">
+        <p class="delete-user-title">Update your details</p>
+            <form action="includes/php/deleteScript.php" class="delete-user-form" method="POST">
+                <label for="user-check">Password:</label>
+                <input type="password" id="user-check" name="user-check"><br>
+            </form>
+            
         </div>
     </div>
 </body>

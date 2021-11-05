@@ -83,3 +83,20 @@ label {
     background-color: #6A96E1;
 }
 
+.delete-user-container {
+    margin: 0vh 0vw 0vh 0vw;
+    width: 40%;
+    display: inline-block;
+}
+
+.delete-user-title {
+    font-size: 32px;
+    margin: 0vh 0vw 0vh 0vw;
+    border-bottom: 2px solid #6A96E1;
+    width: fit-content;
+}
+
+.delete-user-form {
+    margin-top: 2vh;
+}
+
