@@ -23,4 +23,7 @@
             echo '<script>alert("user details updated in the table");</script>'; // Alerts the user that they have been added to the database
             header('Location: ../../account.php'); // Redirects the user to the user home page (userHome.php)
         }
+
+        $_SESSION['user_name'] = $name;
+        $_SESSION['user_email'] = $email;
     }

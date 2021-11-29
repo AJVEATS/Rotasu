@@ -14,9 +14,9 @@
     $welcomeMessage = '';
 
     if ($timeOfDay == 'am') {
-        $welcomeMessage =  'Good morning '.$_COOKIE["user_name"];
+        $welcomeMessage =  'Good Morning '.$_COOKIE["user_name"];
     } else {
-        $welcomeMessage = 'Good afternoon '.$_COOKIE["user_name"];
+        $welcomeMessage = 'Good Afternoon '.$_COOKIE["user_name"];
     }
 
 ?>

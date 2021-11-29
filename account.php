@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
 
-    session_start();
-    include_once 'includes/php/databaseConnection.php';
+session_start();
+include_once 'includes/php/databaseConnection.php';
 
-    if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
-        header('Location: index.php'); // Redirects the user to the index page (index.php)
-    }
+if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
+    header('Location: index.php'); // Redirects the user to the index page (index.php)
+}
 
 ?>
 <html lang="eng">
@@ -48,10 +48,11 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <?php 
-        // echo $_SESSION['user_name'];
-        // echo $_SESSION['user_dob'];
-        // echo $_SESSION['user_email'];
+    <?php
+    // echo $_SESSION['user_id'];
+    // echo $_SESSION['user_name'];
+    // echo $_SESSION['user_dob'];
+    // echo $_SESSION['user_email'];
     ?>
     <div class="account-content-container">
         <div class="welcome-message-container">
@@ -60,31 +61,35 @@
         <div class="detail-container">
             <div class="current-user-details-container">
                 <p class="current-user-details-title">Your Current Details</p>
-                <p class="current-user-details">First name: <?php echo $_SESSION['user_name'] ?></p>
-                <p class="current-user-details">Email: <?php echo $_SESSION['user_email'] ?></p>
-                <p class="current-user-details">Date of birth: <?php echo $_SESSION['user_dob'] ?></p>
+                <p class="current-user-details">First name:&nbsp;&nbsp;<?php echo $_SESSION['user_name'] ?></p>
+                <p class="current-user-details">Email:&nbsp;&nbsp;<?php echo $_SESSION['user_email'] ?></p>
+                <p class="current-user-details">Date of birth:&nbsp;&nbsp;<?php echo $_SESSION['user_dob'] ?></p>
             </div>
             <div class="update-user-details-container">
                 <p class="update-user-details-title">Update your details</p>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
-                    <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name"
-                        value="<?php echo $_SESSION['user_name'] ?>"><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>"><br>
-                    <button type="submit" name="update-user-details-button" class="update-user-details-button"
-                        value="submit">update details</button>
+                    <div class="update-username-container">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>"><br>
+                    </div>
+                    <div class="update-email-container">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>"><br>
+                    </div>
+                    <button type="submit" name="update-user-details-button" class="account-button" value="submit">update details</button>
                     <!-- <input type="submit" value="update details"> -->
                 </form>
             </div>
         </div>
         <div class="delete-user-container">
-        <p class="delete-user-title">Update your details</p>
+            <p class="delete-user-title">Delete you account</p>
             <form action="includes/php/deleteScript.php" class="delete-user-form" method="POST">
+                <p class="delete-account-text">Enter you password to delete your account</p>
                 <label for="user-check">Password:</label>
                 <input type="password" id="user-check" name="user-check"><br>
+                <button type="submit" name="delete-user-button" class="account-button" value="submit">delete</button>
             </form>
-            
+
         </div>
     </div>
 </body>

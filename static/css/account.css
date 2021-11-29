@@ -32,6 +32,11 @@ body {
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    font-size: 20px;
+}
+
+.current-user-details {
+    width: fit-content;
 }
 
 .current-user-details-title {
@@ -55,7 +60,16 @@ body {
 }
 
 .update-user-detail-form {
-    margin-top: 2vh;
+    margin-top: 1em;
+}
+
+.update-email-container {
+    margin-top: 1em;
+    width: fit-content;
+}
+
+.update-username-container {
+    width: fit-content;
 }
 
 label {
@@ -64,7 +78,7 @@ label {
     font-size: 20px;
 }
 
-.update-user-details-button {
+.account-button {
     background-color: #3B69B7;
     border: none;
     color: #ffffff;
@@ -79,7 +93,7 @@ label {
     width: 25%;
 }
 
-.update-user-details-button:hover {
+.account-button:hover {
     background-color: #6A96E1;
 }
 
@@ -97,6 +111,10 @@ label {
 }
 
 .delete-user-form {
-    margin-top: 2vh;
+    margin-top: 1em;
 }
 
+.delete-account-text {
+    margin-top: 1em;
+    font-size: 18px;
+}
