@@ -25,6 +25,7 @@
                 echo '<script>alert("user added to the table");</script>'; // Alerts the user that they have been added to the database
                 header('Location: home.php'); // Redirects the user to the user home page (userHome.php)
             }
+
         } else { // If the user's details aren't added to the database
             echo '<script type="text/javascript">alert("Passwords do not match please enter your password in again")</script>'; // Outputs an error message
         }

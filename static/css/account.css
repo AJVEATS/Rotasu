@@ -63,13 +63,21 @@ body {
     margin-top: 1em;
 }
 
+.update-username-container {
+    width: fit-content;
+}
+
 .update-email-container {
     margin-top: 1em;
     width: fit-content;
 }
 
-.update-username-container {
-    width: fit-content;
+.update-dob-container {
+    margin-top: 1em;
+}
+
+input[type="date"] {
+    cursor: pointer;
 }
 
 label {
@@ -118,3 +126,4 @@ label {
     margin-top: 1em;
     font-size: 18px;
 }
+

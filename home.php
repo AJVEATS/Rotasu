@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <?php
 
-    session_start();
-    include_once 'includes/php/databaseConnection.php';
+session_start();
+include_once 'includes/php/databaseConnection.php';
 
-    if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
-        header('Location: index.php'); // Redirects the user to the index page (index.php)
-    }
+if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
+    header('Location: index.php'); // Redirects the user to the index page (index.php)
+}
 
-    // Gets the time of day so it says good morning or good afternoon to the user
+// Gets the time of day so it says good morning or good afternoon to the user
 
-    $timeOfDay = date('a');
-    $welcomeMessage = '';
+$timeOfDay = date('a');
+$welcomeMessage = '';
 
-    if ($timeOfDay == 'am') {
-        $welcomeMessage =  'Good Morning '.$_COOKIE["user_name"];
-    } else {
-        $welcomeMessage = 'Good Afternoon '.$_COOKIE["user_name"];
-    }
+if ($timeOfDay == 'am') {
+    $welcomeMessage =  'Good Morning ' . $_COOKIE["user_name"];
+} else {
+    $welcomeMessage = 'Good Afternoon ' . $_COOKIE["user_name"];
+}
+
+
+// create function that splits the users birthday and the current date in month and day, Then compare them and display a message if they are the same
+$userDOB = $_SESSION['user_dob'];
+echo $userDOB ."<br>";
+$time = strtotime($userDOB);
+$month = date("m", $time);
+$year = date("d", $time);
+echo date("m");
+echo date("d");
+
+echo $month;
+echo $year;
 
 ?>
 <html lang="eng">
