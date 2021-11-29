@@ -69,12 +69,16 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
                 <p class="update-user-details-title">Update your details</p>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
                     <div class="update-username-container">
-                        <label for="first-name">First name:</label>
-                        <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>"><br>
+                        <label for="first-name">First name:&nbsp;&nbsp;</label>
+                        <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>">
                     </div>
                     <div class="update-email-container">
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>"><br>
+                        <label for="email">Email:&nbsp;&nbsp;</label>
+                        <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>">
+                    </div>
+                    <div class="update-dob-container">
+                        <label for="dob">Date of birth:&nbsp;&nbsp;</label>
+                        <input type="date" id="dob" name="dob" value="<?php echo $_SESSION['user_dob'] ?>">
                     </div>
                     <button type="submit" name="update-user-details-button" class="account-button" value="submit">update details</button>
                     <!-- <input type="submit" value="update details"> -->
@@ -86,7 +90,7 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
             <form action="includes/php/deleteScript.php" class="delete-user-form" method="POST">
                 <p class="delete-account-text">Enter you password to delete your account</p>
                 <label for="user-check">Password:</label>
-                <input type="password" id="user-check" name="user-check"><br>
+                <input type="password" id="user-check" name="user-check" required><br>
                 <button type="submit" name="delete-user-button" class="account-button" value="submit">delete</button>
             </form>
 
