@@ -16,6 +16,20 @@ body {
     font-size: 5vh;
 
     display: block;
-    margin: 10% auto 10% auto;
+    margin: 10% auto 8% auto;
     width: auto;
+}
+
+.main-buttons {
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
+
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    padding-top: 0vh;
+    flex: 1;
 }

@@ -19,13 +19,13 @@ $userDOB = $_SESSION['user_dob'];
 $time = strtotime($userDOB);
 $month = date("m", $time);
 $year = date("d", $time);
-$birthday = date("m", $time).date("d", $time);
+$birthday = date("m", $time) . date("d", $time);
 
-$today = date('m').date('d');
+$today = date('m') . date('d');
 
-if ( $birthday === $today ) {
-   $welcomeMessage = 'Happy Birthday ' . $_COOKIE['user_name'] . "! 🎂";
-} elseif ($timeOfDay == 'am'){
+if ($birthday === $today) {
+    $welcomeMessage = 'Happy Birthday ' . $_COOKIE['user_name'] . "! 🎂";
+} elseif ($timeOfDay == 'am') {
     $welcomeMessage =  'Good Morning ' . $_COOKIE["user_name"];
 } else {
     $welcomeMessage = 'Good Afternoon ' . $_COOKIE["user_name"];
@@ -73,6 +73,24 @@ if ( $birthday === $today ) {
     </div>
     <div class="main-content">
         <p class="welcome-message"><?php echo $welcomeMessage ?></p>
+    </div>
+
+    <div class="main-button-container">
+        <div class="main-buttons">
+            <div class="flex-grid">
+                <div class="col" style="align-items: center; display: flex; justify-content: center;">
+                    <a href="#"><img src="/static/images/icons/dollar-sign.svg" style="height: auto; width: auto;" /></a>
+                </div>
+                <div class="col" style="align-items: center; display: flex; justify-content: center;">
+                    <a href="#">
+                        <img src="/static/images/icons/book-open.svg" style="height: auto; width: auto;" />
+                    </a>
+                </div>
+                <div class="col" style="align-items: center; display: flex; justify-content: center;">
+                    <a href="#"><img src="/static/images/icons/user.svg" style="height: auto; width: auto;" /></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
