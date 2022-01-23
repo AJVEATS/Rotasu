@@ -1,7 +1,8 @@
-<?php
-    
-?>
+
 <!DOCTYPE html>
+<!-- meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="eng" style="background-image: url('/static/images/background/kirby-headphones.gif') !important;">
 
 <head>

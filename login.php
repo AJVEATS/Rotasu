@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<!-- meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="eng">
-<?php 
-    include_once 'includes/php/loginScript.php';
-    // session_start();
+<?php
+include_once 'includes/php/loginScript.php';
+// session_start();
 ?>
 
 <head>

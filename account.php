@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php
 
 session_start();
@@ -96,6 +99,7 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
 
         </div>
     </div>
+    <a href="/map.php">map</a>
 </body>
 
 </html>
