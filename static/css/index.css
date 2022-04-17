@@ -1,4 +1,4 @@
-.account-buttons {
+/* .account-buttons {
     margin: 4vh 0vw 1vh 0vw;
     padding: 0vh 0vw;
     width: auto;
@@ -54,7 +54,23 @@ i:hover {
     }    
     
 }
+*/
 
+@import url("/static/css/colors.css");
 
+main {
+    width: 100%;
+    height: fit-content;
+}
 
-  
+.learn-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.learn-more-link {
+    color: var(--white);
+    text-decoration: none;
+}

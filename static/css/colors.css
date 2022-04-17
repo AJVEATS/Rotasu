@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-size: clamp(16px, 1.2vw, 21px);
+    background-color: var(--white);
+
+    /* Colours */
+    --white: #ffffff;
+    --light-blue: #3B69B7;
+}

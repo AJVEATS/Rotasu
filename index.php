@@ -40,7 +40,7 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
 </head>
 
 <body>
-    <div class="title">
+    <!-- <div class="title">
         <div class="title-container">
             <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
             <div class="title-content">
@@ -55,9 +55,17 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
+    <main>
+        <section class="learn-more">
+            <a class="learn-more-link" href="#about-us">Learn more</a>
+        </section>
+        <section class="about-us" id="about-us">
+            <p>About us</p>
+        </section>
+    </main>
 
 
     <!-- <div class="page-container">
