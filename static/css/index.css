@@ -129,16 +129,16 @@ section.account-buttons {
 .loginPopup {
     position: relative;
     width: 100%;
-    font-family: Soho;
+    font-family: Gotham;
     font-weight: 300;
 }
 
 .formPopup {
     display: none;
     position: fixed;
-    width: 70%;
+    width: 50%;
     left: 50%;
-    top: 0%;
+    top: 20%;
     transform: translate(-50%, 5%);
     z-index: 9;
 
@@ -150,11 +150,8 @@ section.account-buttons {
 }
 
 .formContainer {
-    /* max-width: 750px; */
     padding: 20px 85px;
-    background-color: var(--gold);
-    color: var(--navy);
-    font-weight: bold;
-    /* border-radius: 5px;
-    border: 2px var(--red) solid; */
+    background-color: var(--light-blue);
+    color: var(--white);
+    border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 <?php
-    // include_once './includes/php/databaseConnection.php';
+    include_once './includes/php/databaseConnection.php';
     // session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") { // Checks if a user has submitted a form with a POST request method

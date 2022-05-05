@@ -17,3 +17,12 @@ function closeCreateAccountForm() {
     document.getElementById("createAccountPopupForm").style.display = "none";
     document.getElementById("body").style.overflow = "visible";
 }
+
+function showPassword() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}

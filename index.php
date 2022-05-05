@@ -47,33 +47,53 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
 
         <div class="loginPopup">
             <div class="formPopup" id="loginPopupForm">
-                <form action="loginScript.php" method="POST" class="formContainer">
+                <form action="" method="POST" class="formContainer">
                     <!-- The login in form for users with POST http method -->
-                    <input type="email" placeholder="email" name="email" required>
-                    <input type="password" placeholder="Password" id="password" name="password" required>
+                    <h3>Login</h3>
+                    <div class="login-email">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="email" name="email" required>
+                    </div>
+                    <div class="login-password">
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Password" id="password" name="password" required>
+                    </div>
                     <div class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label>
                     </div>
                     <!-- <input type="submit" value="login" name="login"> -->
-                    <button type="submit" name="login-button" class="login-button" value="submit">login</button>
-                    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                    <button type="submit" name="login-button"class="login-button" value="submit">login</button>
+                    <button type="button"class="btn cancel" onclick="closeLoginForm()">Close</button>
                 </form>
             </div>
         </div>
 
         <div class="createAccountPopup">
             <div class="formPopup" id="createAccountPopupForm">
-                <form action="createAccountScript.php" method="POST" class="formContainer">
-                    <!-- The login in form for users with POST http method -->
-                    <input type="text" placeholder="Your name" name="name" required>
-                    <input type="email" placeholder="email" name="email" required><br>
+                <form action="" method="POST" class="formContainer">
+                    <!-- The create account form for users with POST http method -->
+                    <h3>Create Account</h3>
+                    <div class="create-account-name">
+                        <label for="name">Your Name:</label>
+                        <input type="text" placeholder="Your name" name="name" required>
+                    </div>
+                    <div class="create-account-email">
+                        <label for="email">Your Email:</label>
+                        <input type="email" placeholder="email" name="email" required><br>
+                    </div>
                     <div class="date-input-container">
                         <label for="dob" class="dob-label">Date of birth:</label>
                         <input type="date" id="dob" name="dob" required>
-                    </div><br>
-                    <input type="password" placeholder="Password" id="password" name="password" required>
-                    <input type="password" placeholder="Confirm password" name="passwordConfirm" required>
+                    </div>
+                    <div class="create-account-password">
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Password" id="password" name="password" required>
+                    </div>
+                    <div class="create-account-confirm-password">
+                        <label for="passwordConfirm">ConfirmPassword:</label>
+                        <input type="password" placeholder="Confirm password" name="passwordConfirm" required>
+                    </div>
                     <div class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label>
@@ -98,8 +118,10 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
 
         <section class="account-buttons">
             <div class="account-buttons-container">
-                <a class="login-link" onclick="openLoginForm()">Log in</a>
-                <a class="create-account-link" onclick="openCreateAccountForm()">New here?</a>
+                <a class="login-link" id="login-cta" onclick="openLoginForm()">Log in</a>
+                <!-- <a class="login-link" href="login.php">Log in</a> -->
+                <a class="create-account-link" id="create-account-cta" onclick="openCreateAccountForm()">New here?</a>
+                <!-- <a class="create-account-link" href="createAccount.php">New here?</a> -->
             </div>
         </section>
 
