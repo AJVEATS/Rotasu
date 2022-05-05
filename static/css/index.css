@@ -29,10 +29,6 @@ section.title {
     text-align: center;
 }
 
-.title-logo img {
-    
-}
-
 .title-text {
     width: 100%;
     text-align: center;
@@ -52,7 +48,7 @@ section.account-buttons {
     width: 100%;
     display: block;
     margin: 0 auto;
-    padding-top: ;
+    padding-top: 2%;
 }
 
 .account-buttons-container {
@@ -73,22 +69,12 @@ section.account-buttons {
     padding: 1em 2em;
 }
 
-.login-link {
-
-}
-
-.create-account-link {
-
-}
-
-
-
-
 .account-buttons-container a {
     background: #ECEFF1;
     color: #37474f;
-	border-radius: 5px;
+    border-radius: 5px;
 }
+
 .account-buttons-container a:before {
     content: '';
     position: absolute;
@@ -96,22 +82,25 @@ section.account-buttons {
     left: -15px;
     bottom: -15px;
     right: -15px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 35px;
-	padding: 15px 25px;
+    padding: 15px 25px;
     z-index: -1;
     opacity: 1;
     -webkit-transform: scale3d(0.8, 0.5, 1);
     transform: scale3d(0.8, 0.5, 1);
 }
+
 .account-buttons-container a:hover {
     color: #ECEFF1;
     background-color: #7986cb;
 }
+
 .account-buttons-container a:hover::before {
     -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
     animation: anim-moema-2 0.3s 0.3s forwards;
 }
+
 .account-buttons-container a:hover {
     -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
     transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
@@ -120,49 +109,6 @@ section.account-buttons {
     -webkit-animation: anim-moema-1 0.3s forwards;
     animation: anim-moema-1 0.3s forwards;
 }
-@-webkit-keyframes anim-moema-2 {
-	to {
-		opacity: 0;
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-@keyframes anim-moema-2 {
-	to {
-		opacity: 0;
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-@-webkit-keyframes anim-moema-1 {
-	60% {
-		-webkit-transform: scale3d(0.8, 0.8, 1);
-		transform: scale3d(0.8, 0.8, 1);
-	}
-	85% {
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
-	}
-	100% {
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-@keyframes anim-moema-1 {
-	60% {
-		-webkit-transform: scale3d(0.8, 0.8, 1);
-		transform: scale3d(0.8, 0.8, 1);
-	}
-	85% {
-		-webkit-transform: scale3d(1.1, 1.1, 1);
-		transform: scale3d(1.1, 1.1, 1);
-	}
-	100% {
-		-webkit-transform: scale3d(1, 1, 1);
-		transform: scale3d(1, 1, 1);
-	}
-}
-
 
 /* Learn More Section Styles */
 
@@ -171,10 +117,44 @@ section.account-buttons {
     display: flex;
     justify-content: center;
     padding-top: 5%;
-
 }
 
 .learn-more-link {
     color: var(--white);
     text-decoration: none;
+}
+
+/* Pop up form styling */
+
+.loginPopup {
+    position: relative;
+    width: 100%;
+    font-family: Soho;
+    font-weight: 300;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    width: 70%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+
+}
+
+.formPopup p {
+    color: var(--white);
+    padding-bottom: 3px;
+}
+
+.formContainer {
+    /* max-width: 750px; */
+    padding: 20px 85px;
+    background-color: var(--gold);
+    color: var(--navy);
+    font-weight: bold;
+    /* border-radius: 5px;
+    border: 2px var(--red) solid; */
 }

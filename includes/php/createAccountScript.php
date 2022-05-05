@@ -1,6 +1,6 @@
 <?php 
-    include_once './includes/php/databaseConnection.php';
-    session_start();
+    // include_once './includes/php/databaseConnection.php';
+    // session_start();
 
     if (isset($_POST['create-account-button'])) { // Checks if a user has submitted a form with a POST request method from the form
         if ($_POST['password'] === $_POST['passwordConfirm']) { // Checks if the password and confirm password are identical
