@@ -40,42 +40,32 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
 </head>
 
 <body>
-    <!-- <div class="title">
-        <div class="title-container">
-            <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
-            <div class="title-content">
-                <h1 class="title-h1">how was your day?</h1>
-                <a href="about.php" class="about">
-                    <p class="about-text"><i>learn more about /*name*/</i></p>
-                </a>
-                <div class="account-buttons">
-                    <a href="login.php"><button type="button" id="login" class="account-button">log in</button></a>
-                    <a href="createAccount.php"><button type="button" id="new-here" class="account-button">new
-                            here?</button></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <main>
+        <section class="title">
+            <div class="title-logo">
+                <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
+            </div>
+            <div class="title-text">
+                <h1>Welcome to Lotus</h1>
+                <h2>How was your day?</h2>
+            </div>
+        </section>
+
+        <section class="account-buttons">
+            <div class="account-buttons-container">
+                <a class="login-link" href="login.php">Log in</a>
+                <a class="create-account-link" href="createAccount.php">New here?</a>
+            </div>
+        </section>
+
         <section class="learn-more">
             <a class="learn-more-link" href="#about-us">Learn more</a>
         </section>
+
         <section class="about-us" id="about-us">
             <p>About us</p>
         </section>
     </main>
-
-
-    <!-- <div class="page-container">
-        <div class="main-content-container">
-            <div class="logo-container">
-                <img class="logo" src="/static/images/logo/lotus-96.png" />
-            </div>
-        </div>
-
-    </div> -->
 </body>
 
 </html>

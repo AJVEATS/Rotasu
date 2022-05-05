@@ -1,72 +1,176 @@
-/* .account-buttons {
-    margin: 4vh 0vw 1vh 0vw;
-    padding: 0vh 0vw;
-    width: auto;
+@import url("/static/css/import.css");
+
+body {
+    margin: 0;
+    background-image: url("/static/images/background/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.account-button {
-    padding: 2% 2%;
-    font-size: 25px;
-    width: 25%;
-    height: auto;
-
-    color: #ffffff;
-    background-color: transparent;
-    border: 3px solid #ffffff;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-#login {
-    margin: 0vh 5% 0vh 22%;
-}
-
-.account-button:hover {
-    background-color: #3B69B7;
-    border: 3px solid #3B69B7;
-    color: white;
-    border-radius: 15px;
-}
-
-.about {
-    text-align: center;
-    font-size: 26px;
-}
-
-i:hover {
-    opacity: 0.8;
-}
-
-@media only screen and (max-width: 1470px) {
-    .about {
-        font-size: 22px;
-    }
-    .account-button {
-        font-size: 20px;
-    }    
-    
-}
-*/
-
-@import url("/static/css/colors.css");
 
 main {
     width: 100%;
     height: fit-content;
+    min-height: 100vh;
+    color: var(--white);
+    font-family: Gotham;
 }
+
+/* Title Section Styles */
+
+section.title {
+    width: 100%;
+    display: block;
+    padding-top: 20vh;
+}
+
+.title-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.title-logo img {
+    
+}
+
+.title-text {
+    width: 100%;
+    text-align: center;
+}
+
+.title-text h1 {
+    font-size: 2rem;
+}
+
+.title-text h2 {
+    font-weight: 300;
+}
+
+/* Account Buttons Section Styles */
+
+section.account-buttons {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: ;
+}
+
+.account-buttons-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.account-buttons-container a {
+    width: fit-content;
+    min-width: 30%;
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+.login-link {
+
+}
+
+.create-account-link {
+
+}
+
+
+
+
+.account-buttons-container a {
+    background: #ECEFF1;
+    color: #37474f;
+	border-radius: 5px;
+}
+.account-buttons-container a:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 35px;
+	padding: 15px 25px;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: scale3d(0.8, 0.5, 1);
+    transform: scale3d(0.8, 0.5, 1);
+}
+.account-buttons-container a:hover {
+    color: #ECEFF1;
+    background-color: #7986cb;
+}
+.account-buttons-container a:hover::before {
+    -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+    animation: anim-moema-2 0.3s 0.3s forwards;
+}
+.account-buttons-container a:hover {
+    -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    color: #ECEFF1;
+    background-color: var(--light-blue);
+    -webkit-animation: anim-moema-1 0.3s forwards;
+    animation: anim-moema-1 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@-webkit-keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+/* Learn More Section Styles */
 
 .learn-more {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 5%;
 
 }
 
