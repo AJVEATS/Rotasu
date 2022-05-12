@@ -1,6 +1,6 @@
-@import 'colors.css';
+@import 'import.css';
 .navbar {
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     height: 8vh;
     display: flex;
     justify-content: space-between;

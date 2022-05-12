@@ -62,7 +62,7 @@ section.account-buttons {
 .account-buttons-container a {
     width: fit-content;
     min-width: 30%;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     color: var(--white);
     text-align: center;
     text-decoration: none;
@@ -71,7 +71,7 @@ section.account-buttons {
 
 .account-buttons-container a {
     background: var(--white);
-    color: var(--light-blue);
+    color: var(--dark-blue);
     border-radius: 5px;
 }
 
@@ -93,7 +93,7 @@ section.account-buttons {
 
 .account-buttons-container a:hover {
     color: var(--white);
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
 }
 
 .account-buttons-container a:hover::before {
@@ -105,7 +105,7 @@ section.account-buttons {
     -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
     transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
     color: var(--white);
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     -webkit-animation: anim-moema-1 0.3s forwards;
     animation: anim-moema-1 0.3s forwards;
 }
@@ -152,7 +152,7 @@ section.account-buttons {
 
 .formContainer {
     padding: 3% 6%;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     color: var(--white);
     border-radius: 5px;
 }
