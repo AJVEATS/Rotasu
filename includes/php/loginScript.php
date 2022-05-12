@@ -14,12 +14,6 @@
 
         $count = mysqli_num_rows($result); // Gets the amount of rows returned from the database
 
-        // Echo to see the variables value
-        // echo $email . " ";
-        // echo $password . " ";
-        // echo $validate_user_query_string . " ";
-        // echo $count . " ";
-
         if($count == 1) { // Checks if one row was returned
 
             $_SESSION['user_name'] = $row['user_name'];
@@ -30,6 +24,8 @@
 
             setcookie("user_name", $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id
             setcookie("user_id", $_SESSION['user_id'], $expiry);
+            setcookie("user_dob", $_SESSION['user_dob'], $expiry);
+            setcookie("user_email", $_SESSION['user_email'], $expiry);
 
             header("location: home.php"); // Redirects the logged in user to the user home page (home.php)
         } else { // If it returns more than one row from the database or if it returns nothing from the database

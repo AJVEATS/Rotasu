@@ -1,8 +1,8 @@
 <?php 
     include_once 'databaseConnection.php';
-    session_start();
+    // session_start();
 
-    $user_id = $_SESSION['user_id'];
+    $user_id = $_COOKIE['user_id'];
 
     if (isset($_POST['update-user-details-button'])) { // Checks if a user has submitted a form with a POST request method from the form
         $name = $_POST['first-name']; // Sets the variable $username with the data that the user had entered into the create account form, name field

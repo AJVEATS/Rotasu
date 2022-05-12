@@ -6,6 +6,7 @@
 
 session_start();
 include_once 'includes/php/databaseConnection.php';
+include_once 'includes/php/updateUserDetails.php';
 
 if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
     header('Location: index.php'); // Redirects the user to the index page (index.php)
@@ -26,7 +27,6 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
 
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/account.css"> <!-- Imports the css style sheet index.css -->
-    <link rel="stylesheet" href="static/css/navigationBar.css"> <!-- Imports the css style sheet createAccount.css -->
 
     <!-- JavaScript scripts -->
     <script src="/includes/js/nav-bar.js"></script>
@@ -40,18 +40,7 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <div class="logo">
-            <img class="logo" src="/static/images/logo/lotus-64.png" alt="lotus" />
-        </div>
-        <a href="logout.php">logout</a>
-        <a href="account.php">account</a>
-        <a href="home.php">home</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveness()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <?php
+    <?php include_once 'static/templates/navBar.php'; 
     // echo $_SESSION['user_id'];
     // echo $_SESSION['user_name'];
     // echo $_SESSION['user_dob'];
@@ -59,29 +48,29 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
     ?>
     <div class="account-content-container">
         <div class="welcome-message-container">
-            <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?>
+            <p class="welcome-message">Welcome to your account <?php echo $_COOKIE['user_name'] ?>
         </div>
         <div class="detail-container">
             <div class="current-user-details-container">
                 <p class="current-user-details-title">Your Current Details</p>
-                <p class="current-user-details">First name:&nbsp;&nbsp;<?php echo $_SESSION['user_name'] ?></p>
-                <p class="current-user-details">Email:&nbsp;&nbsp;<?php echo $_SESSION['user_email'] ?></p>
-                <p class="current-user-details">Date of birth:&nbsp;&nbsp;<?php echo $_SESSION['user_dob'] ?></p>
+                <p class="current-user-details">First name:&nbsp;&nbsp;<?php echo $_COOKIE['user_name'] ?></p>
+                <p class="current-user-details">Email:&nbsp;&nbsp;<?php echo $_COOKIE['user_email'] ?></p>
+                <p class="current-user-details">Date of birth:&nbsp;&nbsp;<?php echo $_COOKIE['user_dob'] ?></p>
             </div>
             <div class="update-user-details-container">
                 <p class="update-user-details-title">Update your details</p>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
                     <div class="update-username-container">
                         <label for="first-name">First name:&nbsp;&nbsp;</label>
-                        <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>">
+                        <input type="text" id="first-name" name="first-name" value="<?php echo $_COOKIE['user_name'] ?>">
                     </div>
                     <div class="update-email-container">
                         <label for="email">Email:&nbsp;&nbsp;</label>
-                        <input type="text" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>">
+                        <input type="text" id="email" name="email" value="<?php echo $_COOKIE['user_email'] ?>">
                     </div>
                     <div class="update-dob-container">
                         <label for="dob">Date of birth:&nbsp;&nbsp;</label>
-                        <input type="date" id="dob" name="dob" value="<?php echo $_SESSION['user_dob'] ?>">
+                        <input type="date" id="dob" name="dob" value="<?php echo $_COOKIE['user_dob'] ?>">
                     </div>
                     <button type="submit" name="update-user-details-button" class="account-button" value="submit">update details</button>
                     <!-- <input type="submit" value="update details"> -->

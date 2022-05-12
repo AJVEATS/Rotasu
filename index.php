@@ -116,7 +116,7 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
             </div>
         </section>
 
-        <section class="account-buttons">
+        <section class="account-buttons" id="account-buttons">
             <div class="account-buttons-container">
                 <a class="login-link" id="login-cta" onclick="openLoginForm()">Log in</a>
                 <!-- <a class="login-link" href="login.php">Log in</a> -->
@@ -125,8 +125,12 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
             </div>
         </section>
 
-        <section class="learn-more">
-            <a class="learn-more-link" href="#about-us">Learn more</a>
+        <section class="learn-more" id="learn-more">
+            <a class="learn-more-link" href="#about">Learn more</a>
+        </section>
+
+        <section class="about" id="about">
+
         </section>
     </main>
 </body>
