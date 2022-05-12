@@ -70,8 +70,8 @@ section.account-buttons {
 }
 
 .account-buttons-container a {
-    background: #ECEFF1;
-    color: #37474f;
+    background: var(--white);
+    color: var(--light-blue);
     border-radius: 5px;
 }
 
@@ -92,8 +92,8 @@ section.account-buttons {
 }
 
 .account-buttons-container a:hover {
-    color: #ECEFF1;
-    background-color: #7986cb;
+    color: var(--white);
+    background-color: var(--light-blue);
 }
 
 .account-buttons-container a:hover::before {
@@ -104,11 +104,12 @@ section.account-buttons {
 .account-buttons-container a:hover {
     -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
     transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-    color: #ECEFF1;
+    color: var(--white);
     background-color: var(--light-blue);
     -webkit-animation: anim-moema-1 0.3s forwards;
     animation: anim-moema-1 0.3s forwards;
 }
+
 
 /* Learn More Section Styles */
 
@@ -150,8 +151,28 @@ section.account-buttons {
 }
 
 .formContainer {
-    padding: 20px 85px;
+    padding: 3% 6%;
     background-color: var(--light-blue);
     color: var(--white);
     border-radius: 5px;
+}
+
+.formContainer > div > label {
+    min-width: 25%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .account-buttons-container {
+        width: 90%;
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+    }
+
+    .account-buttons-container a {
+        width: 90%;
+        min-width: unset;
+        margin-bottom: 5%;
+    }
 }

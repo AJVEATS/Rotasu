@@ -99,7 +99,6 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
 
         </div>
     </div>
-    <a href="/map.php">map</a>
 </body>
 
 </html>
