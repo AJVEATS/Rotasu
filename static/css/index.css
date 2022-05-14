@@ -157,9 +157,69 @@ section.account-buttons {
     border-radius: 5px;
 }
 
-.formContainer > div > label {
+.formContainer > section > label {
     min-width: 25%;
     display: inline-block;
+}
+
+.login-form-title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1em;
+}
+
+.formContainer > section {
+    display: flex;
+    padding-bottom: 1em;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.show-password {
+    display: block !important;
+}
+
+input[type="email"], input[type="password"], input[type="date"], input[type="text"] {
+    background-color: var(--white);
+    border: solid 1px var(--white);
+    border-radius: 2px;
+    width: 100%;
+    padding: 0.75em;
+}
+
+input:focus {
+    background-color: var(--white);
+    outline: none;
+}
+
+.login-buttons button {
+    width: 40%;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border: solid 1px var(--white);
+    border-radius: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-family: 'Gotham';
+    font-size: 0.7em;
+}
+
+.create-account-buttons {
+    display: flex;
+}
+
+.create-account-buttons button {
+    width: 40%;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border: solid 1px var(--white);
+    border-radius: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-family: 'Gotham';
+    font-size: 0.7em;
 }
 
 @media screen and (max-width: 1200px) {

@@ -49,22 +49,24 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
             <div class="formPopup" id="loginPopupForm">
                 <form action="" method="POST" class="formContainer">
                     <!-- The login in form for users with POST http method -->
-                    <h3>Login</h3>
-                    <div class="login-email">
+                    <h3 class="login-form-title">Login</h3>
+                    <section class="login-email">
                         <label for="email">Email:</label>
                         <input type="email" placeholder="email" name="email" required>
-                    </div>
-                    <div class="login-password">
+                    </section>
+                    <section class="login-password">
                         <label for="password">Password:</label>
                         <input type="password" placeholder="Password" id="password" name="password" required>
-                    </div>
-                    <div class="show-password">
+                    </section>
+                    <section class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label>
-                    </div>
+                    </section>
                     <!-- <input type="submit" value="login" name="login"> -->
-                    <button type="submit" name="login-button"class="login-button" value="submit">login</button>
-                    <button type="button"class="btn cancel" onclick="closeLoginForm()">Close</button>
+                    <section class="login-buttons">
+                        <button type="submit" name="login-button"class="login-button" value="submit">login</button>
+                        <button type="button"class="btn cancel" onclick="closeLoginForm()">Close</button>
+                    </section>
                 </form>
             </div>
         </div>
@@ -74,33 +76,35 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
                 <form action="" method="POST" class="formContainer">
                     <!-- The create account form for users with POST http method -->
                     <h3>Create Account</h3>
-                    <div class="create-account-name">
+                    <section class="create-account-name">
                         <label for="name">Your Name:</label>
                         <input type="text" placeholder="Your name" name="name" required>
-                    </div>
-                    <div class="create-account-email">
+                    </section>
+                    <section class="create-account-email">
                         <label for="email">Your Email:</label>
                         <input type="email" placeholder="email" name="email" required><br>
-                    </div>
-                    <div class="date-input-container">
+                    </section>
+                    <section class="create-account-dob">
                         <label for="dob" class="dob-label">Date of birth:</label>
                         <input type="date" id="dob" name="dob" required>
-                    </div>
-                    <div class="create-account-password">
+                    </section>
+                    <section class="create-account-password">
                         <label for="password">Password:</label>
                         <input type="password" placeholder="Password" id="password" name="password" required>
-                    </div>
-                    <div class="create-account-confirm-password">
-                        <label for="passwordConfirm">ConfirmPassword:</label>
+                    </section>
+                    <section class="create-account-confirm-password">
+                        <label for="passwordConfirm">Confirm Password:</label>
                         <input type="password" placeholder="Confirm password" name="passwordConfirm" required>
-                    </div>
-                    <div class="show-password">
+                    </section>
+                    <section class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
                         <label for="show-password-checkbox">Show password</label>
-                    </div>
-                    <button type="submit" name="create-account-button" class="create-account-button"
-                        value="submit">create account</button>
-                    <button type="button" class="btn cancel" onclick="closeCreateAccountForm()">Close</button>
+                    </section>
+                    <section class="create-account-buttons">
+                        <button type="submit" name="create-account-button" class="create-account-button"
+                            value="submit">create account</button>
+                        <button type="button" class="btn cancel" onclick="closeCreateAccountForm()">Close</button>
+                    </section>
                 </form>
             </div>
         </div>
@@ -111,7 +115,7 @@ if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie 
                 <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
             </div>
             <div class="title-text">
-                <h1>Welcome to Lotus</h1>
+                <h1>Welcome to Rōtasu</h1>
                 <h2>How was your day?</h2>
             </div>
         </section>

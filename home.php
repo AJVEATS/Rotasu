@@ -42,7 +42,7 @@ if (!isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie
 <body>
     <?php //include_once 'static/templates/navBar.php'; 
     ?>
-    <link rel='stylesheet' href='static/css/navigationBar.css'> <!-- Imports the css style sheet createAccount.css -->
+    <link rel='stylesheet' href='static/css/navigationBar.css'> 
     <section class='navbar' id='navbar'>
         <div class='navbar-logo'>
             <img src='/static/images/logo/lotus-64.png' alt='lotus' />
