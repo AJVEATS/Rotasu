@@ -6,8 +6,6 @@
 include_once 'includes/php/loginScript.php';
 include_once 'includes/php/createAccountScript.php';
 
-session_start(); // Includes the session started in the session.php script
-
 // if (!isset($_COOKIE[$_SESSION['user_name']])) { // Checks if the user has a log in cookie
 //     //echo '<script>console.log("user not logged in");</script>'; // Used for development and testing
 // } else {

@@ -3,3 +3,7 @@ html {
     margin: 0;
     font-size: clamp(16px, 1.2vw, 21px);
 }
+
+body {
+    margin: 0;
+}

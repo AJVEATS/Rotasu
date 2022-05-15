@@ -1,6 +1,6 @@
 <?php
     include_once './includes/php/databaseConnection.php';
-    // session_start();
+    session_start();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") { // Checks if a user has submitted a form with a POST request method
 
@@ -22,10 +22,8 @@
             $_SESSION['user_email'] = $row['user_email'];
             $expiry = time() + 3600 * 24; // Create a variable for the expiry of the cookie which will be created
 
-            setcookie("user_name", $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id
+            // setcookie("user_name", $_SESSION['user_name'], $expiry); // Sets a cookies with the logged in user's username and user id
             setcookie("user_id", $_SESSION['user_id'], $expiry);
-            setcookie("user_dob", $_SESSION['user_dob'], $expiry);
-            setcookie("user_email", $_SESSION['user_email'], $expiry);
 
             header("location: home.php"); // Redirects the logged in user to the user home page (home.php)
         } else { // If it returns more than one row from the database or if it returns nothing from the database
