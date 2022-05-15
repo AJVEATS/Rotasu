@@ -12,7 +12,7 @@ include_once 'includes/php/createAccountScript.php';
 //     echo '<script>console.log("user logged in");</script>';
 //     header('Location: userHome.php'); // If a user is logged in they are redirected to the user home page
 // }
-if (isset($_COOKIE["user_name"])) { // Checks if a users does not have a cookie in their browser
+if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in their browser
     header('Location: home.php'); // Redirects the user to the index page (index.php)
 }
 ?>

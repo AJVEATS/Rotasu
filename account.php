@@ -7,6 +7,7 @@
 session_start();
 include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/updateUserDetails.php';
+include_once 'includes/php/deleteSCript.php';
 
 if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cookie in their browser
     header('Location: index.php'); // Redirects the user to the index page (index.php)
@@ -40,12 +41,8 @@ if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cooki
 </head>
 
 <body>
-    <?php include_once 'static/templates/navBar.php';
-    // echo $_SESSION['user_id'];
-    // echo $_SESSION['user_name'];
-    // echo $_SESSION['user_dob'];
-    // echo $_SESSION['user_email'];
-    ?>
+    <?php include_once 'static/templates/navBar.php'; ?>
+    
     <div class="account-content-container">
         <div class="welcome-message-container">
             <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?>
@@ -81,10 +78,11 @@ if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cooki
             <p class="delete-user-title">Delete you account</p>
             <button class="accordion">Delete account</button>
             <div class="panel">
-                <form action="includes/php/deleteScript.php" class="delete-user-form" method="POST">
+                <form action="" class="delete-user-form" method="POST">
                     <p class="delete-account-text">Enter you password to delete your account</p>
                     <label for="user-check">Password:</label>
-                    <input type="password" id="user-check" name="user-check" required><br>
+                    <input type="hidden" name='_METHOD' value="DELETE">
+                    <!-- <input type="password" id="user-check" name="user-check" required><br> -->
                     <button type="submit" name="delete-user-button" class="account-button" value="submit">delete</button>
                 </form>
             </div>
