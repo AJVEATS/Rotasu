@@ -1,11 +1,8 @@
 html {
-    scroll-behavior: smooth;
-    margin: 0;
-    font-size: clamp(16px, 1.2vw, 21px);
-    background-color: var(--white);
 
     /* Colours */
     --white: #ffffff;
     --dark-blue: #3B69B7;
     --light-blue: #6A96E1;
+    --gray: #333333;
 }

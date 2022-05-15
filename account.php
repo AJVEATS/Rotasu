@@ -79,11 +79,9 @@ if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cooki
             <button class="accordion">Delete account</button>
             <div class="panel">
                 <form action="" class="delete-user-form" method="POST">
-                    <p class="delete-account-text">Enter you password to delete your account</p>
-                    <label for="user-check">Password:</label>
+                    <p class="delete-account-text">Are you sure that you want to delete your account?</p>
                     <input type="hidden" name='_METHOD' value="DELETE">
-                    <!-- <input type="password" id="user-check" name="user-check" required><br> -->
-                    <button type="submit" name="delete-user-button" class="account-button" value="submit">delete</button>
+                    <button type="submit" name="delete-user-button" class="account-button" value="submit">Delete</button>
                 </form>
             </div>
         </div>

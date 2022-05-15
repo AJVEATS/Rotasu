@@ -41,7 +41,7 @@
 }
 
 .update-user-details-container {
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 0;
     width: 40%;
     display: inline-block;
 }
@@ -89,7 +89,7 @@ label {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 2vh 0vw 2vh 0vw;
+    margin: 1em 0vw;
     border-radius: 4px;
     cursor: pointer;
     width: 25%;
@@ -100,14 +100,14 @@ label {
 }
 
 .delete-user-container {
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 0;
     width: 40%;
     display: inline-block;
 }
 
 .delete-user-title {
     font-size: 32px;
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 0 ;
     border-bottom: 2px solid var(--light-blue);
     width: fit-content;
 }

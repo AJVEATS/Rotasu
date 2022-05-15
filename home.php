@@ -32,15 +32,27 @@ if (!isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie i
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dc3d6ef24d.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
-    <div class="main-content">
-        <p class="welcome-message"><?php echo $welcomeMessage; ?></p>
-    </div>
+    <main>
+        <section class="welcome-message">
+            <p><?php echo $welcomeMessage; ?></p>
+        </section>
+        <section class="your-day">
+            <div class="your-day-question">
+                <p>How did you feel this morning?</p>
+            </div>
+            <div class="your-day-answers">
+                <i class="fa-solid fa-face-disappointed fa-2xl"></i>
+                <i class="fa-solid fa-face-meh fa-2xl"></i>
+                <i class="fa-solid fa-face-smile-relaxed fa-2xl"></i>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

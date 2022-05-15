@@ -1,27 +1,44 @@
-.main-content {
-    width: 100vw;
+@import url("/static/css/import.css");
+
+main {
+    width: 100%;
     text-align: center;
+    margin-top: 10%;
+    color: var(--gray);
 }
 
 .welcome-message {
-    color: #333333;
-    font-size: 5vh;
-
+    font-size: 2.5em;
     display: block;
-    margin: 10% auto 8% auto;
     width: auto;
 }
 
-.main-buttons {
-    width: 40%;
-    margin: 0 auto 0 auto;
+.welcome-message p {
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
-.flex-grid {
+.your-day {
+    display: block;
+    width: 100%;
+}
+
+.your-day-answers {
     display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 
-.col {
-    padding-top: 0vh;
-    flex: 1;
+.your-day-answers > svg {
+    padding: 0 0.5em;
+    color: var(--light-blue);
+}
+
+.your-day-answers > svg:hover {
+    padding: 0 0.5em;
+    color: var(--dark-blue);
 }
