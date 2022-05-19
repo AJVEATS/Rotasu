@@ -18,10 +18,11 @@
 .navbar-links {
     width: 80%;
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .navbar-links-mobile {

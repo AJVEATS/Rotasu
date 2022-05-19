@@ -4,7 +4,8 @@ include_once 'databaseConnection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $method = $_SERVER['REQUEST_METHOD']) {
     $currentUserID = $_COOKIE['user_id'];
-    $deleteUserRequest = "DELETE FROM user_tbl WHERE user_id='$currentUserID';";
+    $deleteUserRequest = "DELETE FROM user_tbl WHERE user_id = '$currentUserID';";
+    $deleteUserEntriesRequest = "DELETE FROM user_entries_tbl WHERE user_id = '$currentUserID';";
 
     if (mysqli_query($connection, $deleteUserRequest)) { // Checks if the users detail have been added to the database
         setcookie("user_id", $_SESSION['user_id'], time() - 3600);

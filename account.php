@@ -1,43 +1,22 @@
-<!DOCTYPE html>
-<!-- meta tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php
+    session_start();
+    include_once 'static/templates/htmlHeader.php';
+    include_once 'includes/php/databaseConnection.php';
+    include_once 'includes/php/updateUserDetails.php';
+    include_once 'includes/php/deleteSCript.php';
 
-session_start();
-include_once 'includes/php/databaseConnection.php';
-include_once 'includes/php/updateUserDetails.php';
-include_once 'includes/php/deleteSCript.php';
-
-if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cookie in their browser
-    header('Location: index.php'); // Redirects the user to the index page (index.php)
-}
-
+    if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cookie in their browser
+        header('Location: index.php'); // Redirects the user to the index page (index.php)
+    }
 ?>
-<html lang="eng">
-
-<head>
     <!-- Website Title -->
     <title>account</title>
-
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Wellbeing Tracker Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alexander Veats">
 
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/account.css"> <!-- Imports the css style sheet index.css -->
 
-    <!-- favicon icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- JavaScript scripts -->
     <script src="/includes/js/account.js"></script>
-
 </head>
 
 <body>
