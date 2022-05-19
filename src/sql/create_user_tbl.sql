@@ -1,4 +1,4 @@
---CREATE SCRIPTS
+--CREATE USER_TBL SCRIPTS
 
 CREATE TABLE user_tbl (
 
@@ -8,5 +8,6 @@ CREATE TABLE user_tbl (
     user_password VARCHAR(128) NOT NULL,
     user_dob DATE NOT NULL,
 
+    CONSTRAINT pk_user_tbl PRIMARY KEY (user_id),
     CONSTRAINT unique_user UNIQUE (user_id, user_email)
 );

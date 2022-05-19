@@ -1,8 +1,17 @@
 function showPassword() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
+    var password = document.getElementById("password");
+
+    var createAccountPassword = document.getElementById("create-account-password");
+    
+    if (password.type === "password") {
+        password.type = "text";
     } else {
-        x.type = "password";
+        password.type = "password";
+    }
+
+    if (createAccountPassword.type === "password") {
+        createAccountPassword.type = "text";
+    } else {
+        createAccountPassword.type = "password";
     }
 }

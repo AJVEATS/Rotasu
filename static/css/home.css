@@ -23,7 +23,7 @@ main {
     width: 100%;
 }
 
-.your-day-answers {
+.your-morning, .your-afternoon {
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -33,12 +33,18 @@ main {
     align-content: center;
 }
 
-.your-day-answers > svg {
+.your-morning a, .your-afternoon a {
+    background-color: transparent;
+    border: none;
+}
+
+.your-morning a > svg, .your-afternoon a > svg {
     padding: 0 0.5em;
     color: var(--light-blue);
 }
 
-.your-day-answers > svg:hover {
+.your-morning a > svg:hover, .your-afternoon a > svg:hover {
     padding: 0 0.5em;
     color: var(--dark-blue);
+    cursor: pointer;
 }

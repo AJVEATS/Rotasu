@@ -92,7 +92,7 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
                     </section>
                     <section class="create-account-confirm-password">
                         <label for="passwordConfirm">Confirm Password:</label>
-                        <input type="password" placeholder="Confirm password" name="passwordConfirm" required>
+                        <input type="password" placeholder="Confirm password" name="passwordConfirm" id="create-account-password" required>
                     </section>
                     <section class="show-password">
                         <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
@@ -113,7 +113,7 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
                 <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
             </div>
             <div class="title-text">
-                <h1>Welcome to Rōtasu</h1>
+                <h1>Welcome to Rotasu</h1>
                 <h2>How was your day?</h2>
             </div>
         </section>
