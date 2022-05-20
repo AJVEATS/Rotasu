@@ -1,21 +1,21 @@
 function openLoginForm() {
     document.getElementById("loginPopupForm").style.display = "block";
-    // document.getElementById("body").style.overflow = "hidden";
+    // document.getElementById("create-account-link").onclick = "#";
 }
 
 function closeLoginForm() {
     document.getElementById("loginPopupForm").style.display = "none";
-    // document.getElementById("body").style.overflow = "visible";
+    // document.getElementById("create-account-link").onclick = "openCreateAccountForm()";
 }
 
 function openCreateAccountForm() {
     document.getElementById("createAccountPopupForm").style.display = "block";
-    // document.getElementById("body").style.overflow = "hidden";
+    // document.getElementById("login-link").onclick = "#";
 }
 
 function closeCreateAccountForm() {
     document.getElementById("createAccountPopupForm").style.display = "none";
-    // document.getElementById("body").style.overflow = "visible";
+    // document.getElementById("login-link").onclick = "openLoginForm()";
 }
 
 function showLoginPassword() {

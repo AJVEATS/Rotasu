@@ -74,14 +74,14 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
             <div class="formPopup" id="createAccountPopupForm">
                 <form action="" method="POST" class="formContainer">
                     <!-- The create account form for users with POST http method -->
-                    <h3>Create Account</h3>
+                    <h3 class="create-account-form-title">Create Account</h3>
                     <section class="create-account-name">
                         <label for="name">Your Name:</label>
                         <input type="text" placeholder="Your name" name="name" required>
                     </section>
                     <section class="create-account-email">
                         <label for="email">Your Email:</label>
-                        <input type="email" placeholder="email" name="email" required><br>
+                        <input type="email" placeholder="email" name="email" required>
                     </section>
                     <section class="create-account-dob">
                         <label for="dob" class="dob-label">Date of birth:</label>
@@ -121,9 +121,9 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
 
         <section class="account-buttons" id="account-buttons">
             <div class="account-buttons-container">
-                <a class="login-link" id="login-cta" onclick="openLoginForm()">Log in</a>
+                <a class="login-link" id="login-link" onclick="openLoginForm()">Log in</a>
                 <!-- <a class="login-link" href="login.php">Log in</a> -->
-                <a class="create-account-link" id="create-account-cta" onclick="openCreateAccountForm()">New here?</a>
+                <a class="create-account-link" id="create-account-link" onclick="openCreateAccountForm()">New here?</a>
                 <!-- <a class="create-account-link" href="createAccount.php">New here?</a> -->
             </div>
         </section>

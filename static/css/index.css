@@ -164,8 +164,10 @@ section.account-buttons {
 }
 
 .login-form-title {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    padding-bottom: 1em;
+}
+
+.create-account-form-title {
     padding-bottom: 1em;
 }
 
@@ -232,8 +234,49 @@ input:focus {
     }
 
     .account-buttons-container a {
-        width: 90%;
+        width: 100%;
         min-width: unset;
         margin-bottom: 5%;
+    }
+
+    .formPopup {
+        width: 90%;
+    }
+
+    .formContainer {
+        padding: 7% 7%;
+        padding-bottom: 3%;
+    }
+
+    .formContainer.login-buttons {
+        margin-bottom: 0 !important;
+    }
+
+    .login-buttons button {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .create-account-buttons button {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .login-button {
+        margin-bottom: 1em;
+    }
+
+    .create-account-button {
+        margin-bottom: 1em;
+    }
+
+    .formContainer > section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-bottom: 0.5em;
+    }
+
+    .formContainer > section > label {
+        padding-bottom: 0.15em;
     }
 }
