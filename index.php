@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php
+session_start();
 include_once 'includes/php/loginScript.php';
 include_once 'includes/php/createAccountScript.php';
 
@@ -54,10 +55,10 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
                     </section>
                     <section class="login-password">
                         <label for="password">Password:</label>
-                        <input type="password" placeholder="Password" id="password" name="password" required>
+                        <input type="password" placeholder="Password" id="login-password" name="password" required>
                     </section>
                     <section class="show-password">
-                        <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
+                        <input type="checkbox" id="show-password-login" onclick="showLoginPassword()">
                         <label for="show-password-checkbox">Show password</label>
                     </section>
                     <!-- <input type="submit" value="login" name="login"> -->
@@ -88,14 +89,14 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
                     </section>
                     <section class="create-account-password">
                         <label for="password">Password:</label>
-                        <input type="password" placeholder="Password" id="password" name="password" required>
+                        <input type="password" placeholder="Password" id="create-account-password" name="password" required>
                     </section>
                     <section class="create-account-confirm-password">
                         <label for="passwordConfirm">Confirm Password:</label>
-                        <input type="password" placeholder="Confirm password" name="passwordConfirm" id="create-account-password" required>
+                        <input type="password" placeholder="Confirm password" name="passwordConfirm" id="create-account-password-confirm" required>
                     </section>
                     <section class="show-password">
-                        <input type="checkbox" id="show-password-checkbox" onclick="showPassword()">
+                        <input type="checkbox" id="show-password-create-account" onclick="showCreateAccountPassword()">
                         <label for="show-password-checkbox">Show password</label>
                     </section>
                     <section class="create-account-buttons">
