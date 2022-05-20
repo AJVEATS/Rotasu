@@ -108,6 +108,7 @@ section.account-buttons {
     background-color: var(--dark-blue);
     -webkit-animation: anim-moema-1 0.3s forwards;
     animation: anim-moema-1 0.3s forwards;
+    cursor: pointer;
 }
 
 
