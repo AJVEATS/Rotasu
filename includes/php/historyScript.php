@@ -19,12 +19,13 @@
             $_SESSION['entryDay'.$counter] = $row['entry_day'];
             $_SESSION['amEntry'] = $row['am_entry'];
             $_SESSION['pmEntry'] = $row['pm_entry'];
-            $_SESSION['diaryEntry'] = $row['diary_entry'];
+            $_SESSION['diaryEntry'.$counter] = $row['diary_entry'];
 
             ?> 
                 <article class="diary-entry" id="<?php echo $_SESSION['entryPosition']; ?>">
                     <div class="diary-entry-date">
                         <p><?php echo $_SESSION['entryDay'.$counter]; ?></p>
+                        <p><?php echo $_SESSION['diaryEntry'.$counter]; ?></p>
                     </div>
 
                 </article>

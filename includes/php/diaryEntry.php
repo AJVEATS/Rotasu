@@ -3,6 +3,9 @@
     include_once './includes/php/databaseConnection.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        echo $POST['diary-entry'];
+
         $userID = $_COOKIE['user_id'];
         $amEntry = $_COOKIE['amEntry'];
         $pmEntry = $_COOKIE['pmEntry'];
