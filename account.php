@@ -1,17 +1,14 @@
 <?php
     session_start();
+    if (!isset($_COOKIE["user_id"])) {
+        header('Location: index.php');
+    }
     include_once 'static/templates/htmlHeader.php';
     include_once 'includes/php/databaseConnection.php';
     include_once 'includes/php/updateUserDetails.php';
     include_once 'includes/php/deleteSCript.php';
 
-    if (!isset($_SESSION["user_name"])) {
-        header('Location: index.php');
-    }
 ?>
-    <!-- Website Title -->
-    <title>account</title>
-
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/account.css">
 
@@ -54,7 +51,7 @@
         </div>
         <div class="delete-user-container">
             <p class="delete-user-title">Delete you account</p>
-            <button class="accordion">Delete account</button>
+            <button class="accordion" onclick="deleteAccordian();">Delete account</button>
             <div class="panel">
                 <form action="" class="delete-user-form" method="POST">
                     <p class="delete-account-text">Are you sure that you want to delete your account?</p>

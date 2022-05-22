@@ -1,12 +1,11 @@
 <?php
 session_start();
+if (isset($_COOKIE["user_id"])) {
+    header('Location: home.php');
+}
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/loginScript.php';
 include_once 'includes/php/createAccountScript.php';
-
-if (isset($_COOKIE["user_id"])) { 
-    header('Location: home.php');
-}
 ?>
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/index.css">
@@ -14,10 +13,8 @@ if (isset($_COOKIE["user_id"])) {
     <!-- Scripts -->
     <script src="static/js/index.js"></script>
 </head>
-
 <body>
     <main>
-
         <div class="loginPopup">
             <div class="formPopup" id="loginPopupForm">
                 <form action="" method="POST" class="formContainer">
@@ -41,7 +38,6 @@ if (isset($_COOKIE["user_id"])) {
                 </form>
             </div>
         </div>
-
         <div class="createAccountPopup">
             <div class="formPopup" id="createAccountPopupForm">
                 <form action="" method="POST" class="formContainer">
@@ -78,8 +74,6 @@ if (isset($_COOKIE["user_id"])) {
                 </form>
             </div>
         </div>
-
-
         <section class="title">
             <div class="title-logo">
                 <img class="logo" src="/static/images/logo/lotus-96.png" alt="lotus" />
@@ -89,20 +83,16 @@ if (isset($_COOKIE["user_id"])) {
                 <h2>How was your day?</h2>
             </div>
         </section>
-
         <section class="account-buttons" id="account-buttons">
             <div class="account-buttons-container">
                 <a class="login-link" id="login-link" onclick="openLoginForm()">Log in</a>
                 <a class="create-account-link" id="create-account-link" onclick="openCreateAccountForm()">New here?</a>
             </div>
         </section>
-
         <section class="learn-more" id="learn-more">
             <a class="learn-more-link" href="#about">Learn more</a>
         </section>
-
         <section class="about" id="about">
-
         </section>
     </main>
 </body>

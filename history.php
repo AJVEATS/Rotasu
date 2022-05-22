@@ -1,11 +1,10 @@
 <?php
     session_start();
-    include_once 'static/templates/htmlHeader.php';
-    include_once 'includes/php/databaseConnection.php';
-
     if (!isset($_COOKIE["user_id"])) {
         header('Location: index.php');
     }
+    include_once 'static/templates/htmlHeader.php';
+    include_once 'includes/php/databaseConnection.php';
 ?>
     <!-- Website Title -->
     <title><?php echo $_SESSION["user_name"] ?>'s history</title>

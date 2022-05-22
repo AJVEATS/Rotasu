@@ -1,13 +1,12 @@
 <?php
     session_start();
+    if (!isset($_COOKIE["user_id"])) {
+        header('Location: index.php');
+    }
     include_once 'static/templates/htmlHeader.php';
     include_once 'includes/php/databaseConnection.php';
     include_once 'includes/php/welcomeMessage.php';
     include_once 'includes/php/diaryEntry.php';
-
-    if (!isset($_COOKIE["user_id"])) {
-        header('Location: index.php');
-    }
 ?>
     <!-- Website Title -->
     <title><?php echo $_SESSION["user_name"] ?>'s homepage</title>
