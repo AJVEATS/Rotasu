@@ -21,7 +21,12 @@
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
     <main>
-        <?php include_once 'includes/php/historyScript.php'; ?>
+        <section class="diary-history-title">
+            <h1>Your Diary Entry History</h1>
+        </section>
+        <section class="diary-history">
+            <?php include_once 'includes/php/historyScript.php'; ?>
+        </section>
     </main>
 </body>
 

@@ -3,11 +3,31 @@
 main {
     width: 60%;
     margin: 0 auto;
-    background-color: var(--light-blue);
     height: fit-content;
     color: var(--white);
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1 {
+    color: var(--dark-blue);
+}
+
+h3 {
+    color: var(--light-blue);
+}
+
 .diary-entry {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    margin: 1em 0;
+    padding: 1em;
     background-color: var(--light-blue);
+}
+
+.diary-entry-date {
+    padding-bottom: 0.5em;
 }
