@@ -10,28 +10,28 @@
         $counter = 1;
         while ($row = mysqli_fetch_assoc($result)) {
 
-            $_SESSION['entryPosition'] = $counter;
-            $_SESSION['entryID'.$counter] = $row['entry_id'];
-            $_SESSION['entryTime'.$counter] = $row['entry_time'];
-            $entryDay = date('l', strtotime($_SESSION['entryTime'.$counter]));
-            $entryMonth = date('M', strtotime($_SESSION['entryTime'.$counter]));
-            $entryDateSuffix = date('S', strtotime($_SESSION['entryTime'.$counter]));
-            $entryDayNumber = date('d', strtotime($_SESSION['entryTime'.$counter]));
-            $entryDayYear = date('Y', strtotime($_SESSION['entryTime'.$counter]));
-            $_SESSION['amEntry'.$counter] = $row['am_entry'];
-            $_SESSION['pmEntry'.$counter] = $row['pm_entry'];
-            $_SESSION['diaryEntry'.$counter] = $row['diary_entry'];
+            $_entryPosition = $counter;
+            // $_SESSION['entryID'.$counter] = $row['entry_id'];
+            $entryTime = $row['entry_time'];
+            $entryDay = date('l', strtotime($entryTime));
+            $entryMonth = date('M', strtotime($entryTime));
+            $entryDateSuffix = date('S', strtotime($entryTime));
+            $entryDayNumber = date('d', strtotime($entryTime));
+            $entryDayYear = date('Y', strtotime($entryTime));
+            // $_SESSION['amEntry'.$counter] = $row['am_entry'];
+            // $_SESSION['pmEntry'.$counter] = $row['pm_entry'];
+            $diaryEntry = $row['diary_entry'];
             $delayPercentage = 12.5;
 
             $entryTitle = $entryDay." - ".$entryDayNumber."<span class='entryDateSuffix'>".$entryDateSuffix."</span> of ".$entryMonth." ".$entryDayYear;
 
             ?> 
-                <article class="diary-entry animate fadeInLeft" style=" animation-delay: <?php echo ($delayPercentage / 100) * $counter; ?>s" id="<?php echo $_SESSION['entryPosition']; ?>">
+                <article class="diary-entry animate fadeInLeft" style=" animation-delay: <?php echo ($delayPercentage / 100) * $counter; ?>s" id="<?php echo $entryPosition; ?>">
                     <div class="diary-entry-date">
                         <p><?php echo $entryTitle; ?></p>
                     </div>
                     <div class="diary-entry-text">
-                        <p><?php echo $_SESSION['diaryEntry'.$counter]; ?></p>
+                        <p><?php echo $diaryEntry; ?></p>
                     </div>
                 </article>
             <?php

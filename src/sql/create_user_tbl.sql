@@ -7,6 +7,7 @@ CREATE TABLE user_tbl (
     user_email VARCHAR(35) NOT NULL,
     user_password VARCHAR(128) NOT NULL,
     user_dob DATE NOT NULL,
+    user_location VARCHAR(20),
 
     CONSTRAINT pk_user_tbl PRIMARY KEY (user_id),
     CONSTRAINT unique_user UNIQUE (user_id, user_email)
