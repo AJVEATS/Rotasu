@@ -21,8 +21,18 @@
             // echo $create_account_string . " ";
 
             if (mysqli_query($connection, $create_account_string)) { // Checks if the users detail have been added to the database
-                echo '<script>console.log("user added to the table");</script>'; // Outputs a message to the user's browser console
-                echo '<script>alert("user added to the table");</script>'; // Alerts the user that they have been added to the database
+
+                // $login_new_user_string = "SELECT user_id FROM 'user_tbl' WHERE 'user_name' = $name;";
+                
+
+                // $_SESSION['user_name'] = $name;
+                // $_SESSION['user_id'] = $row['user_id']; // Creates a session variable consisting of the logged in user's user id
+                // $_SESSION['user_dob'] = $dob;
+                // $_SESSION['user_email'] = $email;
+                // $expiry = time() + 3600 * 24; // Create a variable for the expiry of the cookie which will be created
+
+                // setcookie("user_id", $_SESSION['user_id'], $expiry);
+
                 header('Location: home.php'); // Redirects the user to the user home page (userHome.php)
             }
 
@@ -30,4 +40,3 @@
             echo '<script type="text/javascript">alert("Passwords do not match please enter your password in again")</script>'; // Outputs an error message
         }
     }
-?>

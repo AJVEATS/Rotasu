@@ -5,7 +5,6 @@ CREATE TABLE user_entries_tbl (
     entry_id INT(4) NOT NULL AUTO_INCREMENT,
     user_id INT(4) NOT NULL,
     entry_time DATETIME NOT NULL,
-    entry_day VARCHAR(9) NOT NULL,
     am_entry INT(1) NOT NULL,
     pm_entry INT(1) NOT NULL,
     diary_entry VARCHAR(280) NOT NULL,
