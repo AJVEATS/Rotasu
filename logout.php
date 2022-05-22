@@ -1,9 +1,10 @@
 <?php
-    session_start();  // Includes the session started in the session.php script
-    if (session_destroy()) { // Stops the session that was created when the user logged in
+    session_start();
+    if (session_destroy()) {
         setcookie("user_id", $_SESSION['user_id'], time() - 3600);
         setcookie("user_name", $_SESSION['user_name'], time() - 3600);
+        session_destroy();
 
-        header("location: ../../index.php"); // Redirects the user to the index page (index.php)
+        header("location: ../../index.php");
     }
 ?>

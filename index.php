@@ -4,18 +4,12 @@ include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/loginScript.php';
 include_once 'includes/php/createAccountScript.php';
 
-// if (!isset($_COOKIE[$_SESSION['user_name']])) { // Checks if the user has a log in cookie
-//     //echo '<script>console.log("user not logged in");</script>'; // Used for development and testing
-// } else {
-//     echo '<script>console.log("user logged in");</script>';
-//     header('Location: userHome.php'); // If a user is logged in they are redirected to the user home page
-// }
-if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in their browser
-    header('Location: home.php'); // Redirects the user to the index page (index.php)
+if (isset($_COOKIE["user_id"])) { 
+    header('Location: home.php');
 }
 ?>
     <!-- Stylesheet Styling -->
-    <link rel="stylesheet" href="static/css/index.css"> <!-- Imports the css style sheet index.css -->
+    <link rel="stylesheet" href="static/css/index.css">
     
     <!-- Scripts -->
     <script src="static/js/index.js"></script>
@@ -27,7 +21,6 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
         <div class="loginPopup">
             <div class="formPopup" id="loginPopupForm">
                 <form action="" method="POST" class="formContainer">
-                    <!-- The login in form for users with POST http method -->
                     <h3 class="login-form-title">Login</h3>
                     <section class="login-email">
                         <label for="email">Email:</label>
@@ -41,7 +34,6 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
                         <input type="checkbox" id="show-password-login" onclick="showLoginPassword()">
                         <label for="show-password-checkbox">Show password</label>
                     </section>
-                    <!-- <input type="submit" value="login" name="login"> -->
                     <section class="login-buttons">
                         <button type="submit" name="login-button"class="login-button" value="submit">login</button>
                         <button type="button"class="btn cancel" onclick="closeLoginForm()">Close</button>
@@ -53,7 +45,6 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
         <div class="createAccountPopup">
             <div class="formPopup" id="createAccountPopupForm">
                 <form action="" method="POST" class="formContainer">
-                    <!-- The create account form for users with POST http method -->
                     <h3 class="create-account-form-title">Create Account</h3>
                     <section class="create-account-name">
                         <label for="name">Your Name:</label>
@@ -102,9 +93,7 @@ if (isset($_COOKIE["user_id"])) { // Checks if a users does not have a cookie in
         <section class="account-buttons" id="account-buttons">
             <div class="account-buttons-container">
                 <a class="login-link" id="login-link" onclick="openLoginForm()">Log in</a>
-                <!-- <a class="login-link" href="login.php">Log in</a> -->
                 <a class="create-account-link" id="create-account-link" onclick="openCreateAccountForm()">New here?</a>
-                <!-- <a class="create-account-link" href="createAccount.php">New here?</a> -->
             </div>
         </section>
 

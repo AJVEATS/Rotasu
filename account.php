@@ -5,15 +5,15 @@
     include_once 'includes/php/updateUserDetails.php';
     include_once 'includes/php/deleteSCript.php';
 
-    if (!isset($_SESSION["user_name"])) { // Checks if a users does not have a cookie in their browser
-        header('Location: index.php'); // Redirects the user to the index page (index.php)
+    if (!isset($_SESSION["user_name"])) {
+        header('Location: index.php');
     }
 ?>
     <!-- Website Title -->
     <title>account</title>
 
     <!-- Stylesheet Styling -->
-    <link rel="stylesheet" href="static/css/account.css"> <!-- Imports the css style sheet index.css -->
+    <link rel="stylesheet" href="static/css/account.css">
 
     <!-- JavaScript scripts -->
     <script src="/includes/js/account.js"></script>
@@ -49,7 +49,6 @@
                         <input type="date" id="dob" name="dob" value="<?php echo $_SESSION['user_dob'] ?>">
                     </div>
                     <button type="submit" name="update-user-details-button" class="account-button" value="submit">update details</button>
-                    <!-- <input type="submit" value="update details"> -->
                 </form>
             </div>
         </div>

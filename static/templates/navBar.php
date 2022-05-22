@@ -1,5 +1,5 @@
 <?php ?>
-<link rel="stylesheet" href="static/css/navigationBar.css"> <!-- Imports the css style sheet createAccount.css -->
+<link rel="stylesheet" href="static/css/navigationBar.css">
 <section class="navbar" id="navbar">
     <div class="navbar-logo">
         <img src="/static/images/logo/lotus-64.png" alt="lotus" />
