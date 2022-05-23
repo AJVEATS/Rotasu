@@ -53,7 +53,7 @@ main {
     border: 2px solid var(--light-blue);
     border-radius: 5px;
     resize: vertical;
-    width: calc(100% - 5px);
+    /* width: calc(100% - 5px); */
 }
 
 .your-day .diary-submit {
@@ -77,5 +77,6 @@ main {
 
     .your-day textarea {
         padding: 0;
+        width: calc(100% - 5px);
     }
 }

@@ -21,7 +21,7 @@ if ($count > 0) {
         // $_SESSION['amEntry'.$counter] = $row['am_entry'];
         // $_SESSION['pmEntry'.$counter] = $row['pm_entry'];
         $diaryEntry = $row['diary_entry'];
-        $delayPercentage = 12.5;
+        $delayPercentage = 10;
 
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
 
