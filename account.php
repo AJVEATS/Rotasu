@@ -9,6 +9,9 @@ include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/updateUserDetails.php';
 include_once 'includes/php/deleteSCript.php';
 ?>
+
+<title><?php echo $_SESSION['user_name']; ?>'s account</title>
+
 <!-- Stylesheet Styling -->
 <link rel="stylesheet" href="static/css/account.css">
 </head>
@@ -18,11 +21,11 @@ include_once 'includes/php/deleteSCript.php';
 
     <div class="account-content-container">
         <div class="welcome-message-container">
-            <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?>
+            <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?></p>
         </div>
         <div class="detail-container">
             <section class="current-user-details-container">
-                <p class="current-user-details-title">Your Current Details</p>
+                <h2 class="current-user-details-title">Your Current Details</h2>
                 <p class="current-user-details">First name:&nbsp;&nbsp;<?php echo $_SESSION['user_name'] ?></p>
                 <p class="current-user-details">Email:&nbsp;&nbsp;<?php echo $_SESSION['user_email'] ?></p>
                 <p class="current-user-details">Date of birth:&nbsp;&nbsp;<?php echo $_SESSION['user_dob'] ?></p>
@@ -37,8 +40,8 @@ include_once 'includes/php/deleteSCript.php';
                     ?>
                 </p>
             </section>
-            <div class="update-user-details-container">
-                <p class="update-user-details-title">Update your details</p>
+            <section class="update-user-details-container">
+                <h2 class="update-user-details-title">Update your details</h2>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
                     <section class="update-username-container">
                         <label for="first-name">First name:&nbsp;&nbsp;</label>
@@ -48,10 +51,10 @@ include_once 'includes/php/deleteSCript.php';
                         <label for="email">Email:&nbsp;&nbsp;</label>
                         <input type="email" id="email" name="email" value="<?php echo $_SESSION['user_email'] ?>">
                     </section>
-                    <session_cache_expire class="update-dob-container">
+                    <section class="update-dob-container">
                         <label for="dob">Date of birth:&nbsp;&nbsp;</label>
                         <input type="date" id="dob" name="dob" value="<?php echo $_SESSION['user_dob'] ?>">
-                    </session_cache_expire>
+                    </section>
                     <section class="update-location-container">
                         <label for="location">Location:&nbsp;&nbsp;</label>
                         <?php
@@ -62,16 +65,16 @@ include_once 'includes/php/deleteSCript.php';
                                                                                                                                                                                 }
                                                                                                                                                                                     ?>
                     </section>
-                    <button type="submit" name="update-user-details-button" class="account-button" value="submit">update details</button>
+                    <button type="submit" name="update-user-details-button" class="account-button" value="submit">Update details</button>
                 </form>
-            </div>
+            </section>
         </div>
         <section class="delete-user-container">
-            <p class="delete-user-title">Delete you account</p>
+            <h2 class="delete-user-title">Delete you account</h2>
             <button class="accordion" onclick="deleteAccordian();">Delete account</button>
             <div class="panel">
                 <form action="" class="delete-user-form" method="POST">
-                    <p class="delete-account-text">Are you sure that you want to delete your account?</p>
+                    <p class="delete-account-text">Are you sure? 😥</p>
                     <input type="hidden" name='_METHOD' value="DELETE">
                     <button type="submit" name="delete-user-button" class="account-button" value="submit">Delete</button>
                 </form>

@@ -3,7 +3,7 @@
 main {
     width: 100%;
     text-align: center;
-    margin-top: 10%;
+    margin: 10% auto 0 auto;
     color: var(--gray);
 }
 
@@ -53,4 +53,29 @@ main {
     border: 2px solid var(--light-blue);
     border-radius: 5px;
     resize: vertical;
+    width: calc(100% - 5px);
+}
+
+.your-day .diary-submit {
+    background-color: #3B69B7;
+    border: none;
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 1em 0vw;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    main {
+        width: 90%;
+    }
+
+    .your-day textarea {
+        padding: 0;
+    }
 }

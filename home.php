@@ -47,7 +47,7 @@
             <div class="your-day">
                 <textarea name="diary-entry" rows="4" cols="50"></textarea>
             </div>
-            <button name="diary-submit" type="submit">click</button>
+            <button name="diary-submit" class="diary-submit" type="submit">click</button>
         </form>
     </main>
 </body>

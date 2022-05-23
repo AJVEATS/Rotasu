@@ -5,7 +5,7 @@
 
 <head>
     <!-- Website Title -->
-    <title>Rotasu</title>
+    <!-- <title>Rotasu</title> -->
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">

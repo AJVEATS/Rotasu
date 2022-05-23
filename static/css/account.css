@@ -1,5 +1,12 @@
 @import url(/static/css/import.css);
 
+h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--light-blue);
+    width: fit-content;
+    font-weight: 400;
+}
+
 .account-content-container {
     margin-left: auto;
     margin-right: auto;
@@ -8,53 +15,68 @@
 
 .welcome-message-container {
     border-bottom: 2px solid var(--light-blue);
-    /* background-color: lightgrey; */
     padding: 5vh 0vw 0vh 0vw;
 }
 
 .welcome-message {
-    font-size: 42px;
+    font-size: 2em;
     margin: 0vh 0vw 0vh 0vw;
 }
 
 .detail-container {
+    width: 100%;
     margin: 4vh 0vw 0vh 0vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .current-user-details-container {
-    margin: 0vh 0vw 0vh 0vw;
-    width: 40%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
-    font-size: 20px;
 }
 
 .current-user-details {
     width: fit-content;
 }
 
-.current-user-details-title {
-    font-size: 32px;
-    margin: 0vh 0vw 0vh 0vw;
-    border-bottom: 2px solid var(--light-blue);
-    width: fit-content;
-}
-
 .update-user-details-container {
-    margin: 0;
-    width: 40%;
+    width: 50%;
     display: inline-block;
-}
-
-.update-user-details-title {
-    font-size: 32px;
-    margin: 0vh 0vw 0vh 0vw;
-    border-bottom: 2px solid var(--light-blue);
-    width: fit-content;
 }
 
 .update-user-detail-form {
     margin-top: 1em;
+    width: 100%;
+}
+
+.update-user-detail-form > section {
+    margin-bottom: 0.5em;
+    width: 100%;
+    display: flex;
+}
+
+.update-user-detail-form > section > label {
+    min-width: 25%;
+}
+
+.update-user-detail-form > section > input {
+    min-width: 30%;
+    padding-inline-start: 0px;
+    font-family: Gotham;
+    font-weight: 400;
+    font-size: 0.8em;
+    border: 2px solid var(--light-blue);
+    border-radius: 3px;
+    padding-left: 7px;
+}
+
+.update-user-detail-form > section > input:focus-visible {
+    outline: 2px solid var(--dark-blue);
+    border: none;
 }
 
 .update-username-container {
@@ -62,22 +84,11 @@
 }
 
 .update-email-container {
-    /* margin-top: 1em; */
     width: fit-content;
-}
-
-.update-dob-container {
-    margin-top: 1em;
 }
 
 input[type="date"] {
     cursor: pointer;
-}
-
-label {
-    display: inline-block;
-    width: 150px;
-    font-size: 20px;
 }
 
 .account-button {
@@ -85,14 +96,12 @@ label {
     border: none;
     color: var(--white);
     padding: 14px 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 0.9em;
     margin: 1em 0vw;
     border-radius: 4px;
     cursor: pointer;
-    width: 25%;
+    width: fit-content;
 }
 
 .account-button:hover {
@@ -106,10 +115,7 @@ label {
 }
 
 .delete-user-title {
-    font-size: 32px;
     margin: 0 ;
-    border-bottom: 2px solid var(--light-blue);
-    width: fit-content;
 }
 
 .delete-user-form {
@@ -146,4 +152,56 @@ label {
     display: none;
     background-color: var(--white);
     overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .welcome-message-container {
+        padding: 2vh 0vw 0vh 0vw;
+        display: none;
+    }
+
+    .detail-container {
+        margin-top: 1em;
+    }
+
+    .account-content-container {
+        width: 90%;
+    }
+
+    .current-user-details-container {
+        width: 100%;
+    }
+        
+    .update-user-details-container {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        margin-block-start: 0em;
+    }
+
+    .update-user-detail-form > section > label {
+        min-width: 40%;
+    }
+
+    .update-user-detail-form > section > input {
+        width: 100%;
+    }
+
+    .account-button {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .delete-user-container {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    .accordion {
+        width: 100%;
+        text-align: center;
+    }
 }

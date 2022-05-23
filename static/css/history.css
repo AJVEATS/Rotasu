@@ -26,8 +26,48 @@ h3 {
     margin: 1em 0;
     padding: 1em;
     background-color: var(--light-blue);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.diary-entry:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.diary-entry:hover > .diary-entry-title > .diary-action-container {
+    display: inline-flex;
+}
+
+.diary-entry-title {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5em;
 }
 
 .diary-entry-date {
-    padding-bottom: 0.5em;
+
+}
+
+.diary-action-container {
+    display: none;
+}
+
+.diary-action-container > a > svg {
+    color: var(--white);
+    padding-left: 0.5em;
+}
+
+.diary-action-container > a > svg:hover {
+    color: var(--light-pink);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        width: 85%;
+    }
 }
