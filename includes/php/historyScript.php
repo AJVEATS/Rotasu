@@ -32,7 +32,7 @@ if ($count > 0) {
                 <p><?php echo $entryTitle; ?></p>
             </div>
             <div class="diary-action-container">
-                <a href="#"></a>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 <a href="#edit"><i class="fa-solid fa-pen-to-square"></i></a>
                 <a href="#delete"><i class="fa-solid fa-trash-can"></i></a>
             </div>

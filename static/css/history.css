@@ -61,7 +61,7 @@ h3 {
 }
 
 .diary-action-container > a > svg:hover {
-    color: var(--light-pink);
+    color: var(--dark-blue);
 }
 
 
