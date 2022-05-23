@@ -17,12 +17,13 @@ if (isset($_POST['update-user-details-button'])) {
     }
 
     if (mysqli_query($connection, $update_user_details_string)) {
-        session_start();
+        session_start();        
         $_SESSION['user_name'] = $name;
         $_SESSION['user_email'] = $email;
         $_SESSION['user_dob'] = $dob;
         $_SESSION['location'] = $location;
 
         header('Location: ../../account.php');
+        ob_end_flush();
     }
 }

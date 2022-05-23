@@ -1,7 +1,9 @@
 <?php
 session_start();
+ob_start();
 if (isset($_COOKIE["user_id"])) {
     header('Location: home.php');
+    ob_end_flush();
 }
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/loginScript.php';
