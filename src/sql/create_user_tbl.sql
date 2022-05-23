@@ -2,7 +2,7 @@
 
 CREATE TABLE user_tbl (
 
-    user_id INT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user_id INT(4) NOT NULL AUTO_INCREMENT,
     user_name VARCHAR(20) NOT NULL, 
     user_email VARCHAR(35) NOT NULL,
     user_password VARCHAR(128) NOT NULL,
