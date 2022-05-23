@@ -14,9 +14,6 @@
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/home.css">
 
-    <!-- favicon icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
-
     <script src="/includes/js/dairy.js"></script>
 
 </head>
