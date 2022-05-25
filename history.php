@@ -23,6 +23,12 @@
         <section class="diary-history-title">
             <h1>Your Diary Entry History</h1>
         </section>
+        <section class="search-bar">
+            <form action="" class="search-form" method="POST">
+                <input type="text" placeholder="search 🔍" name="searchQuery">
+                <input type="submit" name="searchSubmit" value="search">
+            </form>
+        </section>
         <section class="diary-history">
             <?php include_once 'includes/php/historyScript.php'; ?>
         </section>

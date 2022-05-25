@@ -80,4 +80,8 @@ main {
         padding: 0;
         width: calc(100% - 5px);
     }
+
+    .your-day .diary-submit {
+        width: 100%;
+    }
 }
