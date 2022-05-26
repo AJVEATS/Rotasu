@@ -32,9 +32,9 @@ if ($count > 0) {
                 <p><?php echo $entryTitle; ?></p>
             </div>
             <div class="diary-action-container">
-                <a href="entry.php?mode=get&post_id=<?php echo $entryID; ?>"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="#edit"><i class="fa-solid fa-pen-to-square"></i></a>
-                <a href="#delete"><i class="fa-solid fa-trash-can"></i></a>
+                <a href="entry.php?mode=get&action=view&post_id=<?php echo $entryID; ?>"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="entry.php?mode=get&action=edit&post_id=<?php echo $entryID; ?>"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="entry.php?mode=get&action=delete&post_id=<?php echo $entryID; ?>"><i class="fa-solid fa-trash-can"></i></a>
             </div>
         </div>
         <div class="diary-entry-text">

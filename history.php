@@ -14,7 +14,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>
-
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
     <main>
