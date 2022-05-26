@@ -42,10 +42,28 @@ form.search-form {
 
 input[type="text"] {
     width: 73%;
+    background-color: var(--white);
+    border: 1px solid var(--light-blue);
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: text;
+}
+
+input[type="text"]:focus-visible {
+    outline: var(--white);
 }
 
 input[type="submit"] {
     width: 25%;
+    background-color: #3B69B7;
+    border: none;
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 300px;
 }
 
 .diary-entry {

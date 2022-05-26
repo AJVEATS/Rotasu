@@ -52,6 +52,8 @@ if ($count = 1) {
                 include_once "includes/php/editEntry.php";
             } elseif ($action == "view") {
                 include_once "includes/php/viewEntry.php";
+            } elseif ($action == "delete") {
+                include_once "includes/php/deleteEntry.php";
             }
         ?>
         
