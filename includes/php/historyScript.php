@@ -11,7 +11,7 @@ if ($count > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
 
         $_entryPosition = $counter;
-        // $_SESSION['entryID'.$counter] = $row['entry_id'];
+        $entryID = $row['entry_id'];
         $entryTime = $row['entry_time'];
         $entryDay = date('l', strtotime($entryTime));
         $entryMonth = date('M', strtotime($entryTime));
@@ -32,7 +32,7 @@ if ($count > 0) {
                 <p><?php echo $entryTitle; ?></p>
             </div>
             <div class="diary-action-container">
-                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="entry.php?mode=get&post_id=<?php echo $entryID; ?>"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 <a href="#edit"><i class="fa-solid fa-pen-to-square"></i></a>
                 <a href="#delete"><i class="fa-solid fa-trash-can"></i></a>
             </div>
