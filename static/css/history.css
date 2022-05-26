@@ -20,6 +20,34 @@ h3 {
     color: var(--light-blue);
 }
 
+.diary-entry-title {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5em;
+}
+
+.search-bar {
+    width: 100%;
+    display: block;
+}
+
+form.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 73%;
+}
+
+input[type="submit"] {
+    width: 25%;
+}
+
 .diary-entry {
     width: -webkit-fill-available;
     border-radius: 5px;
@@ -35,16 +63,6 @@ h3 {
 
 .diary-entry:hover > .diary-entry-title > .diary-action-container {
     display: inline-flex;
-}
-
-.diary-entry-title {
-    width: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding-bottom: 0.5em;
 }
 
 .diary-entry-date {

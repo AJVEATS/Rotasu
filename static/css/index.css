@@ -208,6 +208,10 @@ input:focus {
     font-size: 0.7em;
 }
 
+.login-buttons > button:hover {
+    cursor: pointer;
+}
+
 .create-account-buttons {
     display: flex;
 }
@@ -223,6 +227,10 @@ input:focus {
     padding: 1em 2em;
     font-family: 'Gotham';
     font-size: 0.7em;
+}
+
+.create-account-buttons > button:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

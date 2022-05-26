@@ -1,9 +1,7 @@
 <?php
 session_start();
 ob_start();
-if (!isset($_COOKIE["user_id"])) {
-    header('Location: index.php');
-}
+include_once 'includes/php/validateUser.php';
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/updateUserDetails.php';

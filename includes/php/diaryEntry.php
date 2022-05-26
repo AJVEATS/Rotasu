@@ -2,7 +2,7 @@
 
     include_once './includes/php/databaseConnection.php';
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['diary-submit'])) {
 
         echo $POST['diary-entry'];
 

@@ -1,12 +1,10 @@
 <?php
     session_start();
-    if (!isset($_COOKIE["user_id"])) {
-        header('Location: index.php');
-    }
-    include_once 'static/templates/htmlHeader.php';
+    include_once 'includes/php/validateUser.php';
     include_once 'includes/php/databaseConnection.php';
     include_once 'includes/php/welcomeMessage.php';
     include_once 'includes/php/diaryEntry.php';
+    include_once 'static/templates/htmlHeader.php';
 ?>
     <!-- Website Title -->
     <title><?php echo $_SESSION["user_name"] ?>'s homepage</title>
@@ -47,7 +45,7 @@
             <div class="your-day">
                 <textarea name="diary-entry" rows="4" cols="50"></textarea>
             </div>
-            <button name="diary-submit" class="diary-submit" type="submit">click</button>
+            <button name="diary-submit" class="diary-submit" type="submit">Save entry</button>
         </form>
     </main>
 </body>
