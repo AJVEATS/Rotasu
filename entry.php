@@ -23,25 +23,28 @@ if ($count = 1) {
         $entryDateSuffix = date('S', strtotime($entryTime));
         $entryDayNumber = date('d', strtotime($entryTime));
         $entryDayYear = date('Y', strtotime($entryTime));
-        // $_SESSION['amEntry'.$counter] = $row['am_entry'];
-        // $_SESSION['pmEntry'.$counter] = $row['pm_entry'];
+
+        $amEntry = $row['am_entry'];
+        if ($amEntry == 1) {
+            $amEntryHTML = "fa-face-disappointed>";
+        } elseif ($amEntry == 2) {
+            $amEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i>";
+        } elseif ($amEntry == 3) {
+            $amEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'>";
+        }
+        
+        $pmEntry = $row['pm_entry'];
         $diaryEntry = $row['diary_entry'];
         $delayPercentage = 10;
 
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
     }
 }
-
 ?>
-<!-- Website Title -->
 <title>View Entry</title>
-
-<!-- Stylesheet Styling -->
 <link rel="stylesheet" href="static/css/entry.css">
-
-<!-- favicon icon -->
+<link rel="stylesheet" href="static/css/entry/entryCard.css">
 <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon/favicon-32x32.png">
-
 </head>
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>

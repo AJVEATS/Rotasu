@@ -1,0 +1,8 @@
+@import url("/static/css/import.css");
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    height: fit-content;
+    /* color: var(--white); */
+}

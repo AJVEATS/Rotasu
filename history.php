@@ -9,6 +9,7 @@
 
     <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/history.css">
+    <link rel="stylesheet" href="static/css/entry/entryCard.css">
 
     <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
@@ -24,6 +25,13 @@
             <form action="" class="search-form" method="POST">
                 <input type="text" placeholder="search" name="searchQuery">
                 <input type="submit" name="searchSubmit" value="search">
+            </form>
+            <form action="" class="search-date" method="POST">
+                <div class="date-inputs">
+                    <input type="date" placeholder="from" id="dateFrom" name="dateFrom">
+                    <input type="date" placeholder="to" id="dateTo" name="dateTo">
+                </div>
+                <input type="submit" name="searchDateSubmit" value="search">
             </form>
         </section>
         <section class="diary-history">
