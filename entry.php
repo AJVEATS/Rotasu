@@ -4,6 +4,12 @@ include_once 'includes/php/validateUser.php';
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/databaseConnection.php';
 
+// if (!isset($_GET["post_id"])) {
+//     header("location: history.php");
+// } elseif (!isset($_GET["action"])) {
+//     header("location: history.php");
+// }
+
 $entryID = htmlspecialchars($_GET["post_id"]);
 $action = htmlspecialchars($_GET["action"]);
 
@@ -26,14 +32,22 @@ if ($count = 1) {
 
         $amEntry = $row['am_entry'];
         if ($amEntry == 1) {
-            $amEntryHTML = "fa-face-disappointed>";
+            $amEntryHTML = "<i class='fa-solid fa-face-disappointed fa-2xl'></i>";
         } elseif ($amEntry == 2) {
-            $amEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i>";
+            $amEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i></a>";
         } elseif ($amEntry == 3) {
-            $amEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'>";
+            $amEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'></i>";
+        }
+
+        $pmEntry = $row['am_entry'];
+        if ($pmEntry == 1) {
+            $pmEntryHTML = "<i class='fa-solid fa-face-disappointed fa-2xl'></i>";
+        } elseif ($pmEntry == 2) {
+            $pmEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i></a>";
+        } elseif ($pmEntry == 3) {
+            $pmEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'></i>";
         }
         
-        $pmEntry = $row['pm_entry'];
         $diaryEntry = $row['diary_entry'];
         $delayPercentage = 10;
 
@@ -49,7 +63,6 @@ if ($count = 1) {
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
     <main>
-        
         <?php 
             if ($action == "edit"){
                 include_once "includes/php/editEntry.php";

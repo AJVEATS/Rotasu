@@ -39,7 +39,7 @@ include_once 'includes/php/deleteSCript.php';
                 </p>
             </section>
             <section class="update-user-details-container">
-                <h2 class="update-user-details-title">Update your details</h2>
+                <h2 class="update-user-details-title">Update Your Details</h2>
                 <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
                     <section class="update-username-container">
                         <label for="first-name">First name:&nbsp;&nbsp;</label>
@@ -56,28 +56,34 @@ include_once 'includes/php/deleteSCript.php';
                     <section class="update-location-container">
                         <label for="location">Location:&nbsp;&nbsp;</label>
                         <?php
-                            if (isset($_SESSION['location'])) {
-                                ?> <input type="text" id="location" name="location" value="<?php echo $_SESSION['location'] ?>"> <?php
-                                                                                                                        } else {
-                                                                                                                            ?> <input type="text" id="location" name="location"> <?php
+                        if (isset($_SESSION['location'])) {?> 
+                            <input type="text" id="location" name="location" value="<?php echo $_SESSION['location'] ?>"> <?php
+                        } else {
+                            ?> <input type="text" id="location" name="location"> <?php
                                                                                                                                                                                 }
-                                                                                                                                                                                    ?>
+                        ?>
                     </section>
                     <button type="submit" name="update-user-details-button" class="account-button" value="submit">Update details</button>
                 </form>
             </section>
+            <section class="logout-container">
+                <h2>Log Out</h2>
+                <p>Do you want to log out of your account?</p>
+                <a href="logout.php">Log out</a>
+            </section>
+            <section class="delete-user-container">
+                <h2 class="delete-user-title">Delete Your Account</h2>
+                <button class="accordion" onclick="deleteAccordian();">Delete account</button>
+                <div class="panel">
+                    <form action="" class="delete-user-form" method="POST">
+                        <p class="delete-account-text">Are you sure? 😥</p>
+                        <input type="hidden" name='_METHOD' value="DELETE">
+                        <button type="submit" name="delete-user-button" class="account-button" value="submit">Delete</button>
+                    </form>
+                </div>
+            </section>
         </div>
-        <section class="delete-user-container">
-            <h2 class="delete-user-title">Delete you account</h2>
-            <button class="accordion" onclick="deleteAccordian();">Delete account</button>
-            <div class="panel">
-                <form action="" class="delete-user-form" method="POST">
-                    <p class="delete-account-text">Are you sure? 😥</p>
-                    <input type="hidden" name='_METHOD' value="DELETE">
-                    <button type="submit" name="delete-user-button" class="account-button" value="submit">Delete</button>
-                </form>
-            </div>
-        </section>
+
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;

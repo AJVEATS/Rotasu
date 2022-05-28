@@ -35,7 +35,7 @@ include_once 'includes/php/createAccountScript.php';
                     </section>
                     <section class="login-buttons">
                         <button type="submit" name="login-button"class="login-button" value="submit">login</button>
-                        <button type="button"class="btn cancel" onclick="closeLoginForm()">Close</button>
+                        <button type="button"class="btn cancel" onclick="closeLoginForm()">close</button>
                     </section>
                 </form>
             </div>
@@ -71,7 +71,7 @@ include_once 'includes/php/createAccountScript.php';
                     <section class="create-account-buttons">
                         <button type="submit" name="create-account-button" class="create-account-button"
                             value="submit">create account</button>
-                        <button type="button" class="btn cancel" onclick="closeCreateAccountForm()">Close</button>
+                        <button type="button" class="btn cancel" onclick="closeCreateAccountForm()">close</button>
                     </section>
                 </form>
             </div>

@@ -39,19 +39,38 @@ h3 {
     display: inline-flex;
 }
 
+.diary-entry-text {
+    margin-bottom: 1em;
+}
+
 .diary-entry-mood {
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .diary-entry-mood > div {
+    width: 40%;
+}
 
+.diary-entry-mood > .diary-entry-mood-am > p > svg, .diary-entry-mood > .diary-entry-mood-pm > p > svg  {
+    padding-left: 1em;
 }
 
 @media screen and (max-width: 1200px) {
 
     main {
         width: 85%;
+    }
+
+    .diary-entry-mood {
+        flex-wrap: wrap;
+    }
+
+    .diary-entry-mood > div {
+        width: 100%;
+        display: block;
+        margin-bottom: 1em;
     }
 }

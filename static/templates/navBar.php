@@ -9,16 +9,15 @@
     <div class="navbar-links">
         <?php
         if ($currentPage != "home") {
-            echo "<a href='home.php'>home</a>";
+            echo "<a href='home.php'><i class='fa-solid fa-house fa-2xl'></i></a>";
         }
         if ($currentPage != "history") {
-            echo "<a href='history.php'>past entires</a>";
+            echo "<a href='history.php'><i class='fa-solid fa-calendar-clock fa-2xl'></i></a>";
         }
         if ($currentPage != "account") {
-            echo "<a href='account.php'>account</a>";
+            echo "<a href='account.php'><i class='fa-solid fa-user fa-2xl'></i></a>";
         }
         ?>
-        <a href="logout.php">logout</a>
     </div>
     <div class="navbar-links-mobile">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
@@ -31,6 +30,5 @@
         <a href='home.php'>home</a>
         <a href='history.php'>past entires</a>
         <a href='account.php'>account</a>
-        <a href="logout.php">logout</a>
     </div>
 </section>

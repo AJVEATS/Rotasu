@@ -53,11 +53,10 @@ main {
     border: 2px solid var(--light-blue);
     border-radius: 5px;
     resize: vertical;
-    /* width: calc(100% - 5px); */
 }
 
 .your-day .diary-submit {
-    background-color: #3B69B7;
+    background-color: var(--light-blue);
     border: none;
     color: var(--white);
     padding: 14px 20px;
@@ -68,6 +67,12 @@ main {
     cursor: pointer;
     min-width: 300px;
     width: 20%;
+}
+
+.diary-submit:hover {
+    background-color: var(--white);
+    border: 1px solid var(--light-blue);
+    color: var(--light-blue);
 }
 
 @media only screen and (max-width: 1200px) {

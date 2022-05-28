@@ -40,12 +40,12 @@
                 <a name="pm-entry" onclick="savePMEntry(3)" value="3"><i class="fa-solid fa-face-smile-relaxed fa-2xl"></i></a>
             </div>
             <div class="your-day-question">
-                <p>Tell me more about my day</p>
+                <p>Tell me more about your day</p>
             </div>
             <div class="your-day">
                 <textarea name="diary-entry" rows="4" cols="50"></textarea>
             </div>
-            <button name="diary-submit" class="diary-submit" type="submit">Save entry</button>
+            <button name="diary-submit" class="diary-submit" type="submit">save entry</button>
         </form>
     </main>
 </body>

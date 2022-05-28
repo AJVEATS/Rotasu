@@ -5,6 +5,7 @@ h2 {
     border-bottom: 2px solid var(--light-blue);
     width: fit-content;
     font-weight: 400;
+    margin: 0;
 }
 
 .account-content-container {
@@ -25,7 +26,7 @@ h2 {
 
 .detail-container {
     width: 100%;
-    margin: 4vh 0vw 0vh 0vw;
+    margin: 2em 0 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,14 +109,37 @@ input[type="date"] {
     background-color: var(--light-blue);
 }
 
-.delete-user-container {
-    margin: 0;
-    width: 40%;
+.logout-container {
+    width: 50%;
     display: inline-block;
 }
 
-.delete-user-title {
-    margin: 0 ;
+.logout-container > p {
+    margin-block-end: 0;
+}
+
+.logout-container > a {
+    background-color: var(--dark-blue);
+    border: none;
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 1em 0vw;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    display: block;
+}
+
+.logout-container > a:hover {
+    background-color: var(--light-blue);
+}
+
+.delete-user-container {
+    margin: 0;
+    width: 50%;
+    display: inline-block;
 }
 
 .delete-user-form {
@@ -177,6 +201,10 @@ input[type="date"] {
         width: 100%;
     }
 
+    .logout-container {
+        width: 100%;
+    }
+
     h2 {
         width: 100%;
         margin-block-start: 0em;
@@ -202,6 +230,11 @@ input[type="date"] {
 
     .accordion {
         width: 100%;
+        text-align: center;
+    }
+
+    .logout-container > a {
+        width: unset;
         text-align: center;
     }
 }

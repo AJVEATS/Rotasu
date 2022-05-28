@@ -10,7 +10,7 @@ if ($count > 0) {
     $counter = 1;
     while ($row = mysqli_fetch_assoc($result)) {
 
-        $_entryPosition = $counter;
+        $entryPosition = $counter;
         $entryID = $row['entry_id'];
         $entryTime = $row['entry_time'];
         $entryDay = date('l', strtotime($entryTime));

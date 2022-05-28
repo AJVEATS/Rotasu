@@ -1,0 +1,28 @@
+.delete-entry {
+    width: 100%;
+}
+
+.delete-entry > form {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.diary-delete {
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 1em 0vw;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 300px;
+    width: 20%;
+}
+
+.diary-delete:hover {
+    background-color: var(--white);
+    border: 1px solid var(--light-blue);
+    color: var(--light-blue);
+}
