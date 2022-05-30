@@ -5,11 +5,6 @@
         <h1><?php echo $entryTitle; ?></h1>
     </div>
     <article class="diary-entry">
-        <div class="diary-entry-title">
-            <div class="diary-entry-date">
-                <!-- <p><?php echo $entryTitle; ?></p> -->
-            </div>
-        </div>
         <div class="diary-entry-text">
             <p><?php echo $diaryEntry; ?></p>
         </div>

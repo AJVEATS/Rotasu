@@ -1,8 +1,9 @@
 <?php
 
 $userID = $_SESSION['user_id'];
+$delayPercentage = 10;
 
-$get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC LIMIT 5";
+$get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
 $result = mysqli_query($connection, $get_user_entry_history_string);
 $count = mysqli_num_rows($result);
 
@@ -18,11 +19,7 @@ if ($count > 0) {
         $entryDateSuffix = date('S', strtotime($entryTime));
         $entryDayNumber = date('d', strtotime($entryTime));
         $entryDayYear = date('Y', strtotime($entryTime));
-        // $_SESSION['amEntry'.$counter] = $row['am_entry'];
-        // $_SESSION['pmEntry'.$counter] = $row['pm_entry'];
         $diaryEntry = $row['diary_entry'];
-        $delayPercentage = 10;
-
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
 
 ?>

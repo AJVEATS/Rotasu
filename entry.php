@@ -22,7 +22,6 @@ if ($count = 1) {
     while ($row = mysqli_fetch_assoc($result)) {
 
         $_entryPosition = $counter;
-        // $entryID = $row['entry_id'];
         $entryTime = $row['entry_time'];
         $entryDay = date('l', strtotime($entryTime));
         $entryMonth = date('M', strtotime($entryTime));
@@ -37,6 +36,8 @@ if ($count = 1) {
             $amEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i></a>";
         } elseif ($amEntry == 3) {
             $amEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'></i>";
+        } else {
+            $amEntryHTML = "<i class='fa-solid fa-circle-question fa-2xl'></i>";
         }
 
         $pmEntry = $row['am_entry'];
@@ -46,11 +47,11 @@ if ($count = 1) {
             $pmEntryHTML = "<i class='fa-solid fa-face-meh fa-2xl'></i></a>";
         } elseif ($pmEntry == 3) {
             $pmEntryHTML = "<i class='fa-solid fa-face-smile-relaxed fa-2xl'></i>";
+        } else {
+            $pmEntryHTML = "<i class='fa-solid fa-circle-question fa-2xl'></i>";
         }
         
         $diaryEntry = $row['diary_entry'];
-        $delayPercentage = 10;
-
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
     }
 }
