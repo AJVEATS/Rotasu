@@ -30,8 +30,8 @@ include_once 'includes/php/deleteSCript.php';
 
                 <p class="current-user-details">Location:&nbsp;&nbsp;
                     <?php
-                    if (isset($_SESSION['location'])) {
-                        echo $_SESSION['location'];
+                    if (isset($_SESSION['user_location'])) {
+                        echo $_SESSION['user_location'];
                     } else {
                         echo "No location yet";
                     }
@@ -56,8 +56,8 @@ include_once 'includes/php/deleteSCript.php';
                     <section class="update-location-container">
                         <label for="location">Location:&nbsp;&nbsp;</label>
                         <?php
-                        if (isset($_SESSION['location'])) {?> 
-                            <input type="text" id="location" name="location" value="<?php echo $_SESSION['location'] ?>"> <?php
+                        if (isset($_SESSION['user_location'])) {?> 
+                            <input type="text" id="location" name="location" value="<?php echo $_SESSION['user_location'] ?>"> <?php
                         } else {
                             ?> <input type="text" id="location" name="location"> <?php
                                                                                                                                                                                 }

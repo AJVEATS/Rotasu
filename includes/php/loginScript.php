@@ -15,9 +15,8 @@
 
         if (mysqli_num_rows($result) == 1) {
 
-            if (!is_null($row['user_location'])) {
+            if (isset($row['user_location'])) {
                 $_SESSION['user_location'] = $row['user_location'];
-                echo $_SESSION['user_location'] = $row['user_location'];
             }
 
             $_SESSION['user_name'] = $row['user_name'];
