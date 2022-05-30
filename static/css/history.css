@@ -16,7 +16,7 @@ form.search-form {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 input[type="text"] {
