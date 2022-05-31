@@ -4,8 +4,8 @@ ob_start();
 include_once 'includes/php/validateUser.php';
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/databaseConnection.php';
-include_once 'includes/php/updateUserDetails.php';
-include_once 'includes/php/deleteSCript.php';
+include_once 'includes/php/account/updateUserDetails.php';
+include_once 'includes/php/account/deleteSCript.php';
 ?>
 <title><?php echo $_SESSION['user_name']; ?>'s account</title>
 <link rel="stylesheet" href="static/css/account.css">
@@ -34,7 +34,7 @@ include_once 'includes/php/deleteSCript.php';
             </section>
             <section class="update-user-details-container">
                 <h2 class="update-user-details-title">Update Your Details</h2>
-                <form action="includes/php/updateUserDetails.php" class="update-user-detail-form" method="POST">
+                <form action="" class="update-user-detail-form" method="POST">
                     <section class="update-username-container">
                         <label for="first-name">First name:&nbsp;&nbsp;</label>
                         <input type="text" id="first-name" name="first-name" value="<?php echo $_SESSION['user_name'] ?>">

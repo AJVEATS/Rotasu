@@ -1,5 +1,5 @@
 <?php 
-    include_once './includes/php/editEntryScript.php';
+    include_once './includes/php/entry/editEntryScript.php';
 ?>
 <section class="view-entry">
     <link rel="stylesheet" href="static/css/entry/edit.css">
