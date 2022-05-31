@@ -16,6 +16,5 @@
                 <p>In the evening you felt: <?php echo $pmEntryHTML; ?></p>
             </div>
         </div>
-        </div>
     </article>
 </section>

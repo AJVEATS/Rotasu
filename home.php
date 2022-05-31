@@ -6,16 +6,10 @@
     include_once 'includes/php/diaryEntry.php';
     include_once 'static/templates/htmlHeader.php';
 ?>
-    <!-- Website Title -->
     <title><?php echo $_SESSION["user_name"] ?>'s homepage</title>
-
-    <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/home.css">
-
     <script src="/includes/js/dairy.js"></script>
-
 </head>
-
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
     <main>

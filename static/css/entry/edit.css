@@ -1,0 +1,61 @@
+form.update-entry {
+    width: 100%;
+}
+
+.edit-mood-morning, .edit-mood-afternoon {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding-top: 1em;
+}
+
+.edit-mood-morning a, .edit-mood-afternoon a {
+    background-color: transparent;
+    border: none;
+}
+
+.edit-mood-morning a > svg, .edit-mood-afternoon a > svg {
+    padding: 0 0.5em;
+    color: var(--white);
+}
+
+.edit-mood-morning a > svg:hover, .edit-mood-afternoon a > svg:hover {
+    padding: 0 0.5em;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.edit-diary-entry-text {
+    width: 100%;
+}
+
+.edit-diary-entry-text textarea {
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+    resize: vertical;
+    width: calc(100% - 5px);
+    font-family: Gotham;
+    font-size: 1em;
+}
+
+.edit-diary-submit-container {
+    width: 100%;
+    text-align: center;
+}
+
+.edit-diary-submit {
+    background-color: var(--white);
+    color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    margin-bottom: 0;
+}
+
+.edit-diary-submit:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+    border: 2px solid var(--white);
+}

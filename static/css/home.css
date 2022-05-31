@@ -53,6 +53,8 @@ main {
     border: 2px solid var(--light-blue);
     border-radius: 5px;
     resize: vertical;
+    font-family: Gotham;
+    font-size: 1em;
 }
 
 .your-day .diary-submit {

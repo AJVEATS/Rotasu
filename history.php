@@ -4,14 +4,9 @@
     include_once 'static/templates/htmlHeader.php';
     include_once 'includes/php/databaseConnection.php';
 ?>
-    <!-- Website Title -->
     <title><?php echo $_SESSION["user_name"] ?>'s history</title>
-
-    <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/history.css">
     <link rel="stylesheet" href="static/css/entry/entryCard.css">
-
-    <!-- favicon icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
 
 </head>

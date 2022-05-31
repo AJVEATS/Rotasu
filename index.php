@@ -9,10 +9,7 @@ include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/loginScript.php';
 include_once 'includes/php/createAccountScript.php';
 ?>
-    <!-- Stylesheet Styling -->
     <link rel="stylesheet" href="static/css/index.css">
-    
-    <!-- Scripts -->
     <script src="static/js/index.js"></script>
 </head>
 <body>
@@ -98,5 +95,4 @@ include_once 'includes/php/createAccountScript.php';
         </section>
     </main>
 </body>
-
 </html>

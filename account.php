@@ -7,16 +7,11 @@ include_once 'includes/php/databaseConnection.php';
 include_once 'includes/php/updateUserDetails.php';
 include_once 'includes/php/deleteSCript.php';
 ?>
-
 <title><?php echo $_SESSION['user_name']; ?>'s account</title>
-
-<!-- Stylesheet Styling -->
 <link rel="stylesheet" href="static/css/account.css">
 </head>
-
 <body>
     <?php include_once 'static/templates/navBar.php'; ?>
-
     <div class="account-content-container">
         <div class="welcome-message-container">
             <p class="welcome-message">Welcome to your account <?php echo $_SESSION['user_name'] ?></p>
@@ -27,7 +22,6 @@ include_once 'includes/php/deleteSCript.php';
                 <p class="current-user-details">First name:&nbsp;&nbsp;<?php echo $_SESSION['user_name'] ?></p>
                 <p class="current-user-details">Email:&nbsp;&nbsp;<?php echo $_SESSION['user_email'] ?></p>
                 <p class="current-user-details">Date of birth:&nbsp;&nbsp;<?php echo $_SESSION['user_dob'] ?></p>
-
                 <p class="current-user-details">Location:&nbsp;&nbsp;
                     <?php
                     if (isset($_SESSION['user_location'])) {
@@ -60,8 +54,7 @@ include_once 'includes/php/deleteSCript.php';
                             <input type="text" id="location" name="location" value="<?php echo $_SESSION['user_location'] ?>"> <?php
                         } else {
                             ?> <input type="text" id="location" name="location"> <?php
-                                                                                                                                                                                }
-                        ?>
+                        }?>
                     </section>
                     <button type="submit" name="update-user-details-button" class="account-button" value="submit">Update details</button>
                 </form>
@@ -83,11 +76,9 @@ include_once 'includes/php/deleteSCript.php';
                 </div>
             </section>
         </div>
-
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
-
             for (i = 0; i < acc.length; i++) {
                 acc[i].addEventListener("click", function() {
                     this.classList.toggle("active");

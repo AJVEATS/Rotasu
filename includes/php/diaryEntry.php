@@ -13,13 +13,14 @@
         
         if (isset($_COOKIE['pmEntry'])){
             $pmEntry = $_COOKIE['pmEntry'];
+        } else {
             $pmEntry = 0;
         }
         
-        if (isset($_COOKIE['diary-entry'])) {
-            $diaryEntry = $_POST['diary-entry'];
-        } else {
+        if ($_POST['diary-entry'] == "") {
             $diaryEntry = "No diary entry for today";
+        } else {
+            $diaryEntry = $_POST['diary-entry'];
         }
 
         $entryDateTime = date("Y-m-d")." ".date("H:i:s");
