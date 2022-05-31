@@ -64,11 +64,11 @@ if ($count = 1) {
     <main>
         <?php 
             if ($action == "edit"){
-                include_once "includes/php/editEntry.php";
+                include_once "includes/php/entry/editEntry.php";
             } elseif ($action == "view") {
-                include_once "includes/php/viewEntry.php";
+                include_once "includes/php/entry/viewEntry.php";
             } elseif ($action == "delete") {
-                include_once "includes/php/deleteEntry.php";
+                include_once "includes/php/entry/deleteEntry.php";
             }
         ?>
         

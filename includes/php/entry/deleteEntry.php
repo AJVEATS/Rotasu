@@ -1,5 +1,5 @@
 <?php
-include_once "includes/php/viewEntry.php";
+include_once "includes/php/entry/viewEntry.php";
 
 if (isset($_POST['diary-delete'])) {
     $delete_entry_string = "DELETE FROM user_entries_tbl WHERE entry_id = '$entryID';";

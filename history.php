@@ -17,11 +17,11 @@
             <h1>Your Diary Entry History</h1>
         </section>
         <section class="search-bar">
-            <form action="" class="search-form" method="POST">
+            <form action="" class="search-form" method="GET">
                 <input type="text" placeholder="search" name="searchQuery">
                 <input type="submit" name="searchSubmit" value="search">
             </form>
-            <form action="" class="search-date" method="POST">
+            <form action="" class="search-date" method="GET">
                 <div class="date-inputs">
                     <input type="date" placeholder="from" id="dateFrom" name="dateFrom">
                     <input type="date" placeholder="to" id="dateTo" name="dateTo">

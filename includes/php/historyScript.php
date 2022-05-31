@@ -3,7 +3,18 @@
 $userID = $_SESSION['user_id'];
 $delayPercentage = 10;
 
-$get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
+if (isset($_GET['searchSubmit'])) {
+    header("location: history.php?mode=get&action=search&search_term=".$_GET['searchQuery']);
+}
+
+if (isset($_GET['search_term'])) {
+    $searchQuery = $_GET['search_term'];
+    $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE diary_entry LIKE '%$searchQuery%' ORDER BY entry_time DESC";
+} else {
+    $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
+}
+
+// $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
 $result = mysqli_query($connection, $get_user_entry_history_string);
 $count = mysqli_num_rows($result);
 
@@ -21,7 +32,7 @@ if ($count > 0) {
         $entryDayYear = date('Y', strtotime($entryTime));
         $diaryEntry = $row['diary_entry'];
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
-
+    
 ?>
     <article class="diary-entry animate fadeInLeft" style=" animation-delay: <?php echo ($delayPercentage / 100) * $counter; ?>s" id="<?php echo $entryPosition; ?>">
         <div class="diary-entry-title">
