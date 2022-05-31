@@ -4,11 +4,9 @@ include_once 'includes/php/validateUser.php';
 include_once 'static/templates/htmlHeader.php';
 include_once 'includes/php/databaseConnection.php';
 
-// if (!isset($_GET["post_id"])) {
-//     header("location: history.php");
-// } elseif (!isset($_GET["action"])) {
-//     header("location: history.php");
-// }
+if ($_GET["post_id"] == "") {
+    header("location: history.php");
+} 
 
 $entryID = htmlspecialchars($_GET["post_id"]);
 $action = htmlspecialchars($_GET["action"]);

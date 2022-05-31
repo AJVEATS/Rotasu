@@ -19,7 +19,6 @@ if (isset($_POST['edit-diary-submit'])) {
     }
 
     $updatedDiaryEntry = $_POST['edit-diary-entry'];
-
     $diary_entry_update = "UPDATE user_entries_tbl SET am_entry = '$updatedAmEntry', pm_entry = '$updatedPmEntry', diary_entry = '$updatedDiaryEntry' WHERE entry_id = '$post_id';";
 
     if (mysqli_query($connection, $diary_entry_update)) {
