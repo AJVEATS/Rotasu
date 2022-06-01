@@ -19,13 +19,12 @@ if (isset($_GET['search_term'])) {
     if ($dateFrom > $dateTo) {
         echo "<script>alert('The first date needs to be older than the second date');</script>"; 
     } else {
-        $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE entry_time > '$dateFrom' AND entry_time < '$dateTo';";
+        $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE entry_time > '$dateFrom' AND entry_time < '$dateTo' ORDER BY entry_time DESC;";
     }
 } else {
     $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
 }
 
-// $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
 $result = mysqli_query($connection, $get_user_entry_history_string);
 $count = mysqli_num_rows($result);
 
