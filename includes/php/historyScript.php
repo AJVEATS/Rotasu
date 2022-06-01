@@ -5,11 +5,22 @@ $delayPercentage = 10;
 
 if (isset($_GET['searchSubmit'])) {
     header("location: history.php?mode=get&action=search&search_term=".$_GET['searchQuery']);
+} elseif (isset($_GET['searchDateSubmit'])) {
+    header("location: history.php?mode=get&action=search&date_from=".$_GET['dateFrom']."&date_to=".$_GET['dateTo']);
 }
 
 if (isset($_GET['search_term'])) {
     $searchQuery = $_GET['search_term'];
     $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE diary_entry LIKE '%$searchQuery%' ORDER BY entry_time DESC";
+} elseif (isset($_GET['date_from'])) {
+    $dateFrom = $_GET['date_from'];
+    $dateTo = $_GET['date_to'];
+
+    if ($dateFrom > $dateTo) {
+        echo "<script>alert('The first date needs to be older than the second date');</script>"; 
+    } else {
+        $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE entry_time > '$dateFrom' AND entry_time < '$dateTo';";
+    }
 } else {
     $get_user_entry_history_string = "SELECT entry_id, entry_time, am_entry, pm_entry, diary_entry FROM user_entries_tbl WHERE user_id = '$userID' ORDER BY entry_time DESC";
 }
@@ -29,6 +40,11 @@ if ($count > 0) {
         $entryMonth = date('M', strtotime($entryTime));
         $entryDateSuffix = date('S', strtotime($entryTime));
         $entryDayNumber = date('d', strtotime($entryTime));
+
+        if ($entryDayNumber[0] == "0") {
+            $entryDayNumber = ltrim($entryDayNumber, $entryDayNumber[0]);
+        }
+
         $entryDayYear = date('Y', strtotime($entryTime));
         $diaryEntry = $row['diary_entry'];
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
@@ -52,6 +68,10 @@ if ($count > 0) {
 <?php
     $counter++;
 }
+} elseif (isset($_GET['date_from'])) {
+    echo "<h3>You haven't got any entries from this time 😔</h3>";
+} elseif(isset($_GET['search_term'])) {
+    echo "<h3>You haven't got any entries with those words 😔</h3>";
 } else {
     echo "<h3>You haven't got any entries yet 😔</h3>";
 }

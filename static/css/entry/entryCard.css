@@ -68,7 +68,6 @@ button {
     margin: 1em 0vw;
     border-radius: 4px;
     cursor: pointer;
-    min-width: 300px;
     width: 20%;
 }
 

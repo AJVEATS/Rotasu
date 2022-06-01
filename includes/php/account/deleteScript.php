@@ -1,6 +1,6 @@
 <?php
 
-include_once 'databaseConnection.php';
+include_once './includes/php/databaseConnection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $method = $_SERVER['REQUEST_METHOD']) {
     $currentUserID = $_COOKIE['user_id'];

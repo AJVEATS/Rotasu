@@ -23,7 +23,7 @@
             $diaryEntry = $_POST['diary-entry'];
         }
 
-        $entryDateTime = date("Y-m-d")." ".date("H:i:s");
+        $entryDateTime = date("Y-m-d");
         $diary_entry_create = "INSERT INTO user_entries_tbl(user_id, entry_time, am_entry, pm_entry, diary_entry) VALUES ('$userID', '$entryDateTime', '$amEntry', '$pmEntry', '$diaryEntry');";
 
         if (mysqli_query($connection, $diary_entry_create)) {

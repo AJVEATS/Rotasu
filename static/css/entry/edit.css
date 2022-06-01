@@ -52,6 +52,7 @@ form.update-entry {
     color: var(--light-blue);
     border: 2px solid var(--light-blue);
     margin-bottom: 0;
+    min-width: fit-content;
 }
 
 .edit-diary-submit:hover {

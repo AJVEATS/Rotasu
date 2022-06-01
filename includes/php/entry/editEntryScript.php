@@ -1,5 +1,5 @@
 <?php
-include_once 'databaseConnection.php';
+include_once './includes/php/databaseConnection.php';
 
 $post_id = $_GET['post_id'];
 
