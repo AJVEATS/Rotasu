@@ -29,6 +29,14 @@ if (isset($_POST['edit-diary-submit'])) {
         setcookie('editPmEntry', null, -1, '/'); 
 
         header('Location: history.php');
+    } else {
+        unset($_COOKIE['editAmEntry']);
+        unset($_COOKIE['editPmEntry']);
+
+        setcookie('editAmEntry', null, -1, '/'); 
+        setcookie('editPmEntry', null, -1, '/'); 
+
+        header('Location: history.php');
     }
 }
 
