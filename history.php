@@ -1,6 +1,4 @@
 <?php
-
-// TODO Add 'back to top' button
     session_start();
     include_once 'includes/php/validateUser.php';
     include_once 'static/templates/htmlHeader.php';

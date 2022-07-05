@@ -34,12 +34,16 @@ form.update-entry {
 }
 
 .edit-diary-entry-text textarea {
-    border: 2px solid var(--light-blue);
+    border: 2px solid var(--white);
     border-radius: 5px;
     resize: vertical;
     width: calc(100% - 5px);
     font-family: Gotham;
     font-size: 1em;
+}
+
+.edit-diary-entry-text textarea:focus {
+    outline-color: var(--dark-blue);
 }
 
 .edit-diary-submit-container {

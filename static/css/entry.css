@@ -6,3 +6,15 @@ main {
     height: fit-content;
     /* color: var(--white); */
 }
+
+.backToEntryButton {
+    color: var(--light-blue);
+    padding-left: 1%;
+    width: fit-content;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.backToEntryButton:hover {
+    color: var(--dark-blue);
+    filter: drop-shadow(0px);
+}

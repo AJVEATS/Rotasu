@@ -13,6 +13,7 @@ include_once 'includes/php/createAccountScript.php';
     <script src="static/js/index.js"></script>
 </head>
 <body>
+    <!-- <?php include_once 'static/templates/navBar.php'; ?> -->
     <main>
         <div class="loginPopup">
             <div class="formPopup" id="loginPopupForm">

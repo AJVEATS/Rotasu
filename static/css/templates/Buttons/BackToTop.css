@@ -1,6 +1,6 @@
-#BackToTop {
+#backToTop {
     display: none;
-    width: 15%;
+    width: 5%;
     position: fixed;
     bottom: 2%;
     right: 2%;
@@ -9,15 +9,17 @@
     outline: none;
     background-color: transparent;
     color: var(--light-blue);
-    cursor: pointer;
+    cursor: default;
     border-radius: 4px;
 }
 
-#backToTop:hover {
-    cursor: default;
+#backToTop svg:hover {
+    color: var(--dark-blue);
+    cursor: pointer !important;
 }
 
-#BackToTop svg:hover {
-    color: var(--dark-blue);
-    cursor: pointer;
+@media screen and (max-width: 1200px) {
+    #backToTop { 
+        display: none !important;
+    }
 }

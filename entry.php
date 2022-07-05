@@ -71,6 +71,8 @@ if ($count = 1) {
                 include_once "includes/php/entry/deleteEntry.php";
             }
         ?>
-        
+        <section class="backToEntry">
+            <a class="backToEntryButton" href="history.php"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>
+        </section>
     </main>
 </body>
