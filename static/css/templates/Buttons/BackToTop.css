@@ -1,0 +1,23 @@
+#BackToTop {
+    display: none;
+    width: 15%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--light-blue);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#backToTop:hover {
+    cursor: default;
+}
+
+#BackToTop svg:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}

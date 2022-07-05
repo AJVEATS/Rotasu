@@ -1,5 +1,6 @@
 @import 'import.css';
 
+/* TODO Make nav bar sticky */
 .navbar {
     background-color: var(--light-blue);
     height: fit-content;

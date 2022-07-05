@@ -39,4 +39,3 @@ if (isset($_POST['edit-diary-submit'])) {
         header('Location: history.php');
     }
 }
-

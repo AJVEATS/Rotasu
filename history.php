@@ -1,4 +1,6 @@
 <?php
+
+// TODO Add 'back to top' button
     session_start();
     include_once 'includes/php/validateUser.php';
     include_once 'static/templates/htmlHeader.php';
@@ -12,7 +14,8 @@
 </head>
 
 <body>
-    <?php include_once 'static/templates/navBar.php'; ?>
+    <?php include_once 'static/templates/navBar.php';
+    include_once 'static/templates/BackToTop.php';?>
     <main>
         <section class="diary-history-title">
             <h1>Your Diary Entry History</h1>
