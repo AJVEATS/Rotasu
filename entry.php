@@ -38,7 +38,7 @@ if ($count = 1) {
             $amEntryHTML = "<i class='fa-solid fa-circle-question fa-2xl'></i>";
         }
 
-        $pmEntry = $row['am_entry'];
+        $pmEntry = $row['pm_entry'];
         if ($pmEntry == 1) {
             $pmEntryHTML = "<i class='fa-solid fa-face-disappointed fa-2xl'></i>";
         } elseif ($pmEntry == 2) {
