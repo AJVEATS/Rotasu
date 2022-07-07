@@ -3,7 +3,7 @@
     include_once 'includes/php/validateUser.php';
     include_once 'includes/php/databaseConnection.php';
     include_once 'includes/php/welcomeMessage.php';
-    include_once 'includes/php/diaryEntry.php';
+    // include_once 'includes/php/diaryEntry.php';
     include_once 'static/templates/htmlHeader.php';
 ?>
     <title><?php echo $_SESSION["user_name"] ?>'s homepage</title>
@@ -16,7 +16,7 @@
         <section class="welcome-message">
             <p><?php echo $welcomeMessage; ?></p>
         </section>
-        <form action="" method="POST"  class="your-day">
+        <form action="/includes/php/diaryEntry.php" method="POST"  class="your-day" enctype="multipart/form-data">
             <div class="your-day-question">
                 <p>How did you feel this morning?</p>
             </div>
@@ -38,6 +38,9 @@
             </div>
             <div class="your-day">
                 <textarea name="diary-entry" rows="4" cols="50"></textarea>
+            </div>
+            <div class="days-image">
+                <input type="file" name="image">
             </div>
             <button name="diary-submit" class="diary-submit" type="submit">save entry</button>
         </form>
