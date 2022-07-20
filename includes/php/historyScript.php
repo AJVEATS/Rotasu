@@ -49,7 +49,7 @@ if ($count > 0) {
         $entryTitle = $entryDay . " - " . $entryDayNumber . "<span class='entryDateSuffix'>" . $entryDateSuffix . "</span> of " . $entryMonth . " " . $entryDayYear;
     
 ?>
-    <article class="diary-entry animate fadeInLeft" style=" animation-delay: <?php echo ($delayPercentage / 100) * $counter; ?>s" id="<?php echo $entryPosition; ?>">
+    <article class="diary-entry animate" id="<?php echo $entryPosition; ?>">
         <div class="diary-entry-title">
             <div class="diary-entry-date">
                 <p><?php echo $entryTitle; ?></p>

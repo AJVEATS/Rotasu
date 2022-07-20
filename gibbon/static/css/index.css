@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    scroll-padding-top: 90px;
+    font-size: clamp(16px, 1.2vw, 21px);
+    --white: #ffffff
+}
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    font-size: 1rem;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.slider-slide {
+    position: relative;
+    width: 100%;
+}
+
+.tns-outer button[data-action="start"] {
+    display: none;
+}
+
+.tns-outer button[data-action="stop"] {
+    display: none;
+}
+
+.tns-controls {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+    height: auto;
+    display: none;
+}
+
+.tns-controls:focus {
+    outline: none !important;
+}
+
+.tns-controls button {
+    position: relative;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    text-indent: -250px;
+    width: 40px;
+    height: auto;
+    padding: 0;
+}
+
+.tns-controls button::before,
+.tns-controls button::after {
+    content: ' ';
+    background: transparent center / contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tns-controls button::after {
+    opacity: 0;
+}
+
+.tns-controls button:hover::after {
+    opacity: 1;
+}
+
+.tns-controls button:hover::before {
+    opacity: 0;
+} 
+
+.tns-controls button[data-controls="prev"]::before {
+    background-image: url('/gibbon/static/images/slide-left-white.svg');
+}
+
+.tns-controls button[data-controls="prev"]::after {
+    background-image: url('../images/slide-left-black.svg');
+}
+
+.tns-controls button[data-controls="next"]::before {
+    background-image: url('../images/slide-right-white.svg');
+}
+
+.tns-controls button[data-controls="next"]::before {
+    background-image: url('../images/slide-right-black.svg');
+}

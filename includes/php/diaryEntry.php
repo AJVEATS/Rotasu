@@ -29,14 +29,17 @@
                     // header("Location: home.php?upload_worked");
                 } else {
                     echo "<script type='text/javascript'>alert('Your image is too large 😮');</script>";
+                    //header('Location: ../../home.php');
                     // echo "Your image is too large 😮";
                 }
             } else {
                 echo "<script type='text/javascript'>alert('There was an error uploading your image 😔');</script>";
+                //header('Location: ../../home.php');
                 // echo "There was an error uploading your image 😔";
             }
         } else {
             echo "<script type='text/javascript'>alert('The file needs to be an image 🥺');</script>";
+            //header('Location: ../../home.php');
             // echo "The file needs to be an image 🥺";
         }
 
